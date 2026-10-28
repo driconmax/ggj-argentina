@@ -1,0 +1,140 @@
+year: 2026
+intro: >-
+  La 17.ª Global Game Jam se desarrolló mundialmente entre el 26 de enero y
+  el 1 de febrero de 2026. Cada sede pudo elegir dentro de esos seis días la
+  ventana de 48 horas más conveniente para su comunidad.
+dates: 26 de enero al 1 de febrero de 2026
+theme:
+  name: Mask
+  translation: Máscara
+  note: >-
+    Según la explicación publicada por la directora ejecutiva Maria Burns
+    Ortiz, el proceso de selección comenzó en octubre de 2025. Un comité
+    voluntario internacional evaluó propuestas por sus posibilidades de
+    diseño, similitud con temas anteriores, connotaciones culturales y
+    asociaciones no deseadas. La opción seleccionada fue presentada al Board
+    para su aprobación a comienzos de diciembre y luego pasó a producción y
+    traducción para el anuncio global.
+global_stats:
+  participants: 39197
+  sites: 824
+  countries: 94
+  games: 9874
+stats_note: >-
+  Cifras finales publicadas por Global Game Jam en abril de 2026.
+regional_organizers:
+  - person_id: gustavo-gabriel-gonzalez
+    role: Organización regional
+    scope: Edición 2026
+    source: Testimonio directo de la organización regional
+  - person_id: debora-sofia-theaux-leutgeb
+    role: Organización regional
+    scope: Edición 2026
+    source: Testimonio directo de la organización regional
+staff:
+  - {name: Maria Burns Ortiz, role: Executive Director, countries: [US]}
+  - {name: Richard Hebblewhite, role: Director of Programs and Events, countries: [GB]}
+  - {name: Tarja Porkka-Kontturi, role: Director of Community Engagement, countries: [FI]}
+  - {name: Zain Ul Hassan, role: Director of Technology, countries: [PK]}
+  - {name: Diana Sanchez, role: Sponsorships Coordinator, countries: [US]}
+  - {name: Emmi Hattunen, role: Community and Events Coordinator, countries: [FI]}
+global_regional_coordination:
+  source: Créditos del keynote de GGJ 2026
+  members:
+    - {name: Sandro Gonçalves, countries: [PT]}
+    - {name: Lucía Herrero, countries: [ES]}
+    - {name: Victor Bruno Alexander de Quiroz, countries: [BR]}
+executive_committee:
+  period: 2025–2026
+  members:
+    - {name: Sabrina Culyba, countries: [US]}
+    - {name: Sandro Daniel Gomes Gonçalves, countries: [PT]}
+    - {name: Jo Summers, countries: [GB]}
+    - {name: Joseph Olin, countries: [US, CO]}
+    - {name: Ekinsu Turunc Gunes, countries: [TR, CA]}
+    - {name: Yadu Rajiv, countries: [IN]}
+    - {name: Oleksii Izvalov, countries: [UA]}
+    - {name: Sandra Castro, countries: [CO]}
+    - {name: Richard Hebblewhite, countries: [GB]}
+    - {name: Jung-Sheng “Johnson” Lin, countries: [TW]}
+    - {name: KunAn Li, countries: [CN]}
+    - {name: Lucia Herrero, countries: [ES]}
+    - {name: Victor Bruno Alexander Rosetti de Quiroz, countries: [BR]}
+committees:
+  - title: Theme Committee
+    source: Créditos del keynote de GGJ 2026
+    chair: {name: Richard Hebblewhite, countries: [GB]}
+    members:
+      - {name: Amel Negra, countries: [FR]}
+      - {name: Jarne Beaufays, countries: [BE]}
+      - {name: Madara Āboliņa, countries: [LV]}
+      - {name: KunAn Li, countries: [CN]}
+      - {name: Joseph Olin, countries: [US, CO]}
+      - {person_id: gustavo-gabriel-gonzalez}
+      - {name: Thomas Carnicer, countries: [FR]}
+      - {name: Yuval Sapir, countries: [IL]}
+      - {name: Yadu Rajiv, countries: [IN]}
+      - {name: Jo Summers, countries: [GB]}
+  - title: Diversifier Committee
+    source: Créditos del keynote y publicación oficial de GGJ 2026
+    chair: {name: Richard Hebblewhite, countries: [GB]}
+    members:
+      - {name: Sabrina Culyba, countries: [US]}
+      - {name: Jarne Beaufays, countries: [BE]}
+      - {person_id: gustavo-gabriel-gonzalez}
+      - {name: Yadu Rajiv, countries: [IN]}
+      - {name: Yuval Sapir, countries: [IL]}
+      - {name: Jo Summers, countries: [GB]}
+      - {name: Amel Negra, countries: [FR]}
+      - {name: Madara Āboliņa, countries: [LV]}
+      - {name: Joseph Olin, countries: [US, CO]}
+board_during:
+  period: 2025–2026
+  note: >-
+    La historia institucional de GGJ identifica al siguiente Board para el
+    período 2025–2026.
+  members:
+    - {name: Jarory de Jesus, role: President, countries: [US]}
+    - {person_id: mishka-de-caro, role: Vice President}
+    - {name: Felix Hilgert, role: Secretary, countries: [US, DE]}
+    - {name: Kate Edwards, role: Treasurer, countries: [US]}
+    - {name: Jo Summers, role: Integrante, countries: [GB]}
+    - {name: Martine Spaans, role: Integrante, countries: [NL]}
+    - {name: Mashael Abualnaja, role: Integrante, countries: [SA]}
+    - {name: Sabrina Culyba, role: Integrante, countries: [US]}
+    - {name: Yadu Rajiv, role: Integrante, countries: [IN]}
+board_update:
+  period: Mayo de 2026
+  note: Composición publicada por GGJ en mayo de 2026.
+  members:
+    - {name: Jarory de Jesus, role: President, countries: [US]}
+    - {person_id: mishka-de-caro, role: Vice President}
+    - {name: Mia Ginaé Watkins, role: Treasurer, countries: [US]}
+    - {name: Adriana Taylor, role: Secretary, countries: [US]}
+    - {name: AJ Glasser, role: Integrante, countries: [US]}
+    - {name: James Read, role: Integrante, countries: [GB, US]}
+    - {name: Jung-Sheng “Johnson” Lin, role: Integrante, countries: [TW]}
+    - {name: Yadu Rajiv, role: Integrante, countries: [IN]}
+survey_note: >-
+  La encuesta posterior registró que el 88 % de quienes respondieron aprendió
+  o mejoró habilidades, el 94 % presentó un juego y más del 99 % afirmó que
+  probablemente o definitivamente participaría nuevamente. La encuesta
+  recibió 3.535 respuestas; estos porcentajes describen esa muestra voluntaria,
+  no necesariamente a la totalidad de participantes.
+sources:
+  - title: "Global Game Jam 2026: Jammer Survey Data"
+    url: https://globalgamejam.org/news/global-game-jam-2026-jammer-survey-data
+  - title: Thanks for Making GGJ 2026 a Success!
+    url: https://globalgamejam.org/news/thanks-making-ggj-2026-success
+  - title: Important Dates
+    url: https://globalgamejam.org/important-dates
+  - title: Global Game Jam History
+    url: https://globalgamejam.org/history
+  - title: About Global Game Jam
+    url: https://globalgamejam.org/about
+  - title: Reflections on the GGJ 2026 Theme
+    url: https://globalgamejam.org/news/reflections-ggj-2026-theme
+  - title: Global Game Jam 2026 Diversifiers Have Arrived
+    url: https://globalgamejam.org/global-game-jam-2026-diversifiers-have-arrived
+  - title: Mapa oficial de sedes 2026
+    url: https://globalgamejam.org/map/2026

@@ -37,6 +37,13 @@ plugins:
   - search:
       lang: es
 
+hooks:
+  - hooks/build_pages.py
+
+watch:
+  - data
+  - hooks
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -51,19 +58,17 @@ nav:
   - Historia:
       - Introducción: historia/index.md
       - Ediciones por año: historia/anios/index.md
-      - "2026": historia/anios/2026/index.md
-      - Cómo documentar una edición: historia/plantilla-edicion.md
   - Sedes:
       - Directorio: sedes/index.md
       - Por provincia: sedes/por-provincia.md
       - Por nombre: sedes/por-nombre.md
-      - Plantilla de sede: sedes/plantilla-sede.md
+  - Organizaciones: organizaciones/index.md
+  - Personas: personas/index.md
   - Organización:
       - Guía general: organizacion/index.md
       - Antes del evento: organizacion/antes-del-evento.md
       - Durante y después: organizacion/durante-y-despues.md
   - Recursos: recursos/index.md
-  - Cómo contribuir: contribuir.md
   - Licencia: licencia.md
 
 copyright: Contenido mantenido por la comunidad de GGJ Argentina

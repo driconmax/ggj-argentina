@@ -62,3 +62,11 @@
 .md-footer-meta {
   border-top: 3px solid var(--arg-sol);
 }
+
+.country-flag {
+  cursor: help;
+  display: inline-block;
+  font-size: 1.08em;
+  line-height: 1;
+  margin-right: 0.15em;
+}

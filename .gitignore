@@ -2,3 +2,13 @@
 .venv/
 site/
 __pycache__/
+
+# Páginas reconstruidas durante la compilación
+docs/historia/anios/*/index.md
+docs/historia/anios/*/sedes-por-provincia.md
+docs/historia/anios/*/sedes-por-nombre.md
+docs/sedes/por-provincia.md
+docs/sedes/por-nombre.md
+docs/sedes/fichas/
+docs/organizaciones/
+docs/personas/

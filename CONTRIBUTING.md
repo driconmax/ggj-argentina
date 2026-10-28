@@ -5,7 +5,7 @@ Gracias por ayudar a construir la memoria de GGJ Argentina.
 ## Formas de colaborar
 
 - Corregir errores o mejorar la redacción.
-- Documentar una edición o una sede mediante las plantillas existentes.
+- Documentar una edición, un evento, una organización o una persona.
 - Aportar guías y recursos útiles para participantes y equipos organizadores.
 - Abrir un issue cuando no tengas suficiente información para proponer el cambio directamente.
 
@@ -13,11 +13,66 @@ Gracias por ayudar a construir la memoria de GGJ Argentina.
 
 1. Creá un fork del repositorio.
 2. Trabajá en una rama con un nombre descriptivo.
-3. Modificá o agregá archivos dentro de `docs/`.
+3. Modificá la ficha YAML correspondiente dentro de `data/`. El contenido narrativo no estructurado permanece dentro de `docs/`.
 4. Ejecutá `mkdocs build --strict` si tenés el entorno local instalado.
 5. Abrí un pull request y explicá qué agregaste, de dónde surge la información y cómo puede verificarse.
 
 Los cambios pequeños también pueden hacerse con el botón de edición de GitHub presente en cada página.
+
+## Fichas de sede
+
+Cada sede tiene un único archivo YAML. No edites manualmente los índices ni las páginas dentro de `docs/sedes/fichas/`: se regeneran durante la compilación.
+
+```yaml
+id: 2026-ejemplo
+year: 2026
+name: GGJ26 - Sede de ejemplo
+province: Córdoba
+locality: Ciudad de ejemplo
+audience: ggj
+organization_id: organizacion-ejemplo
+participants: 42
+games: 8
+organizers:
+  - person_id: persona-ejemplo
+source: https://ejemplo.org/fuente
+```
+
+Los campos `participants` y `games` son opcionales. Cuando se informan, deben ser enteros iguales o mayores que cero. Los totales muestran tanto la suma como cuántas sedes aportaron el dato, para no presentar una cobertura parcial como total nacional.
+
+Usá `audience: next` para una sede GGJ NEXT. Los campos `id` y `organization_id` deben ser estables. La organización referenciada debe tener una ficha en `data/organizations/`.
+
+Cuando una misma organización tenga eventos en distintos años, sus fichas enlazan automáticamente la edición anterior y la siguiente. Si en un mismo año realizó más de un evento, todos aparecen juntos en ese paso de la cronología.
+
+## Organizaciones
+
+Cada organización tiene un archivo en `data/organizations/`:
+
+```yaml
+id: organizacion-ejemplo
+name: Organización de ejemplo
+country: AR
+website: https://ejemplo.org/
+summary: Breve descripción verificable.
+```
+
+El índice y la lista de participaciones se calculan a partir de los eventos que usan su `id`.
+
+## Personas
+
+Las personas argentinas con participación documentada tienen una ficha en `data/people/`:
+
+```yaml
+id: persona-ejemplo
+name: Nombre completo
+countries: [AR]
+summary: Perfil breve y verificable.
+sources:
+  - title: Fuente del perfil
+    url: https://ejemplo.org/fuente
+```
+
+Para reutilizarla en una edición o como integrante de la organización local de un evento, usá `person_id: persona-ejemplo` en lugar de repetir el nombre. Sus roles y organizaciones relacionadas aparecerán automáticamente en su perfil.
 
 ## Criterios editoriales
 
@@ -29,6 +84,6 @@ Los cambios pequeños también pueden hacerse con el botón de edición de GitHu
 
 ## Pull requests
 
-Al enviar un cambio confirmás que tenés derecho a compartir el material. Mientras la licencia general siga pendiente, cada contribución será evaluada de forma individual y no implica una licencia de reutilización más amplia.
+Al enviar un cambio confirmás que tenés derecho a compartir el material bajo las licencias indicadas en el repositorio.
 
 Las conversaciones deben ser respetuosas y centrarse en mejorar el contenido. Los desacuerdos sobre hechos históricos deben resolverse con fuentes o señalando claramente las versiones existentes.
