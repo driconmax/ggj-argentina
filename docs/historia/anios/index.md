@@ -4,7 +4,7 @@ Cada edición tendrá un espacio propio con su historia, organización, particip
 
 ## Índice
 
-Todavía no hay años publicados. Se incorporarán a medida que la comunidad pueda respaldar la información con fuentes o testimonios autorizados.
+- [2026](2026/index.md)
 
 ## Estructura de una edición
 

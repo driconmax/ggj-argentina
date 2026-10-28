@@ -51,6 +51,7 @@ nav:
   - Historia:
       - Introducción: historia/index.md
       - Ediciones por año: historia/anios/index.md
+      - "2026": historia/anios/2026/index.md
       - Cómo documentar una edición: historia/plantilla-edicion.md
   - Sedes:
       - Directorio: sedes/index.md
