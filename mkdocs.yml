@@ -1,0 +1,68 @@
+site_name: GGJ Argentina
+site_description: Memoria y recursos colaborativos de la comunidad Global Game Jam en Argentina
+site_url: https://driconmax.github.io/ggj-argentina/
+repo_url: https://github.com/driconmax/ggj-argentina
+repo_name: driconmax/ggj-argentina
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Usar tema oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Usar tema claro
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: es
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+nav:
+  - Inicio: index.md
+  - Historia:
+      - Introducción: historia/index.md
+      - Ediciones por año: historia/anios/index.md
+      - Cómo documentar una edición: historia/plantilla-edicion.md
+  - Sedes:
+      - Directorio: sedes/index.md
+      - Por provincia: sedes/por-provincia.md
+      - Por nombre: sedes/por-nombre.md
+      - Plantilla de sede: sedes/plantilla-sede.md
+  - Organización:
+      - Guía general: organizacion/index.md
+      - Antes del evento: organizacion/antes-del-evento.md
+      - Durante y después: organizacion/durante-y-despues.md
+  - Recursos: recursos/index.md
+  - Cómo contribuir: contribuir.md
+  - Licencia: licencia.md
+
+copyright: Contenido mantenido por la comunidad de GGJ Argentina

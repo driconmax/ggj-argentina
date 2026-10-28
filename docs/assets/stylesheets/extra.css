@@ -1,0 +1,64 @@
+/* Identidad inspirada en la bandera argentina. */
+:root,
+[data-md-color-scheme="default"] {
+  --arg-celeste: #74acdf;
+  --arg-celeste-profundo: #2878ad;
+  --arg-azul-noche: #17324d;
+  --arg-sol: #f6b40e;
+  --md-primary-fg-color: var(--arg-celeste);
+  --md-primary-fg-color--light: #a9d3f2;
+  --md-primary-fg-color--dark: var(--arg-celeste-profundo);
+  --md-primary-bg-color: var(--arg-azul-noche);
+  --md-primary-bg-color--light: #294a68;
+  --md-accent-fg-color: var(--arg-celeste-profundo);
+  --md-typeset-a-color: #176b9f;
+}
+
+[data-md-color-scheme="slate"] {
+  --arg-celeste: #82c4f2;
+  --arg-azul-noche: #0b2135;
+  --arg-sol: #ffc928;
+  --md-default-bg-color: #0d1d2b;
+  --md-default-bg-color--light: #12283a;
+  --md-default-bg-color--lighter: #183248;
+  --md-default-bg-color--lightest: #213e55;
+  --md-primary-fg-color: var(--arg-azul-noche);
+  --md-primary-fg-color--light: #173b58;
+  --md-primary-fg-color--dark: #071725;
+  --md-primary-bg-color: #f5fbff;
+  --md-accent-fg-color: var(--arg-celeste);
+  --md-typeset-a-color: var(--arg-celeste);
+}
+
+.md-header {
+  border-bottom: 3px solid var(--arg-sol);
+}
+
+[data-md-color-scheme="default"] .md-header {
+  background: linear-gradient(90deg, #69a9d8, #eaf7ff 50%, #69a9d8);
+  color: var(--arg-azul-noche);
+}
+
+[data-md-color-scheme="default"] .md-header__button,
+[data-md-color-scheme="default"] .md-header__title {
+  color: var(--arg-azul-noche);
+}
+
+.md-typeset h1 {
+  color: var(--md-typeset-color);
+  font-weight: 700;
+}
+
+.md-typeset h2 {
+  border-bottom: 2px solid color-mix(in srgb, var(--arg-celeste) 55%, transparent);
+  padding-bottom: 0.25rem;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-color: var(--arg-celeste);
+}
+
+.md-footer-meta {
+  border-top: 3px solid var(--arg-sol);
+}
