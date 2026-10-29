@@ -40,8 +40,10 @@ GGJ Argentina proyecto colaborativo de código abierto.
 - **Contenido y documentación:** [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.es). Se permite compartir, modificar y reutilizar el contenido, incluso comercialmente, siempre que se reconozca la autoría y las adaptaciones mantengan la misma licencia.
 - **Código y configuración:** [MIT](https://opensource.org/licenses/MIT). Se permite utilizar, modificar y distribuir libremente el código, conservando los avisos de derechos de autor y licencia.
 
+Quienes acepten expresamente las condiciones de contribución también conceden a Global Game Jam, Inc. el permiso especial detallado en [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md); este permiso no se aplica retroactivamente ni alcanza materiales de terceros.
+
 Las fotografías, logotipos y materiales de terceros conservan sus respectivos derechos y condiciones de uso.
 
-Consultá [Licencia](docs/licencia.md) para conocer los términos completos y las condiciones de atribución.
+Consultá [Licencia](docs/licencia.md) y [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md) para conocer los términos completos y las condiciones de atribución.
 
 Este proyecto es una iniciativa comunitaria y no representa necesariamente las posiciones oficiales de Global Game Jam, Inc.

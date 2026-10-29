@@ -35,9 +35,13 @@ Su alcance se limita a los materiales sobre los cuales quienes lo conceden posee
 
 Cada colaborador conserva los derechos de autor sobre sus contribuciones originales.
 
-Las contribuciones se publican bajo CC BY-SA 4.0.
+Las contribuciones originales de contenido y documentación se publican bajo CC BY-SA 4.0. Las contribuciones de código fuente, scripts y configuraciones se publican bajo MIT.
+
+Esta licencia también se aplica a los textos originales y demás elementos protegidos por derechos de autor contenidos en los archivos YAML del proyecto. Los hechos históricos, nombres, fechas y cifras, considerados individualmente, no quedan sujetos a restricciones adicionales por esta declaración.
 
 El permiso especial para Global Game Jam únicamente se extiende a las contribuciones cuyos titulares hayan autorizado expresamente dicho permiso.
+
+Las contribuciones realizadas antes de la adopción de estas condiciones no quedan sujetas retroactivamente al permiso especial, salvo autorización expresa de sus titulares.
 
 La aceptación de contribuciones futuras estará sujeta a las condiciones establecidas en `CONTRIBUTING.md`.
 

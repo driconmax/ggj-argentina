@@ -110,6 +110,8 @@ Al enviar una contribución original a GGJ Argentina, aceptás que:
 
 Al contribuir, confirmás que sos titular de los derechos necesarios para conceder estos permisos.
 
+Cada pull request debe incluir la confirmación expresa de estas condiciones mediante la casilla obligatoria de la plantilla. Las contribuciones anteriores a la adopción de este procedimiento no conceden retroactivamente el permiso especial a Global Game Jam, Inc.; para incluirlas será necesaria la autorización expresa de sus titulares.
+
 Si incorporás materiales de terceros, debés identificar su origen y licencia, y contar con las autorizaciones correspondientes. El permiso especial para Global Game Jam no se extiende a esos materiales sin autorización de sus titulares.
 
 Las condiciones completas se encuentran en [`LICENSE`](LICENSE), [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md) y [`docs/licencia.md`](docs/licencia.md).
