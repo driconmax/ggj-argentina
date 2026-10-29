@@ -74,6 +74,8 @@ sources:
 
 Para reutilizarla en una edición o como integrante de la organización local de un evento, usá `person_id: persona-ejemplo` en lugar de repetir el nombre. Sus roles y organizaciones relacionadas aparecerán automáticamente en su perfil.
 
+La organización regional de un año que todavía no tenga una edición completa puede registrarse en `data/regional_organizers/AAAA.yml`. Ese dato alimenta el índice histórico y las fichas personales sin necesidad de crear estadísticas o contenidos aún desconocidos.
+
 ## Criterios editoriales
 
 - No presentes recuerdos, cifras o fechas dudosas como hechos confirmados.

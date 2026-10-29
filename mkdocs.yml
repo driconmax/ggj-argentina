@@ -58,6 +58,7 @@ nav:
   - Historia:
       - Introducción: historia/index.md
       - Ediciones por año: historia/anios/index.md
+      - Organización regional: historia/organizacion-regional.md
   - Sedes:
       - Directorio: sedes/index.md
       - Por provincia: sedes/por-provincia.md

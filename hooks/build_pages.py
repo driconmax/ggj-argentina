@@ -66,11 +66,11 @@ def _flag(code):
     return f'<span class="country-flag" title="{country}" aria-label="{country}">{emoji}</span>'
 
 
-def _person(person):
+def _person(person, profile_prefix="../../../personas/"):
     flags = " ".join(_flag(code) for code in person.get("countries", []))
     name = _cell(person["name"])
     if person.get("person_id"):
-        name = f"[{name}](../../../personas/{person['person_id']}.md)"
+        name = f"[{name}]({profile_prefix}{person['person_id']}.md)"
     return f"{flags} {name}".strip()
 
 
@@ -383,7 +383,20 @@ def _render_organizations_index(organizations, sites):
     return "\n".join(lines)
 
 
-def _person_roles(person_id, editions):
+def _regional_assignments(editions, regional_records):
+    assignments = []
+    for year, edition in editions.items():
+        for person in edition.get("regional_organizers", []):
+            assignments.append((year, person))
+    for year, record in regional_records.items():
+        for person in record.get("regional_organizers", []):
+            item = (year, person)
+            if item not in assignments:
+                assignments.append(item)
+    return sorted(assignments, key=lambda item: item[0])
+
+
+def _person_roles(person_id, editions, regional_records):
     roles = []
     for year, edition in sorted(editions.items()):
         for entry in _argentine_participation(edition):
@@ -393,6 +406,13 @@ def _person_roles(person_id, editions):
                 item = (year, role, scope, source)
                 if item not in roles:
                     roles.append(item)
+    for year, person in _regional_assignments(editions, regional_records):
+        if person.get("person_id") != person_id:
+            continue
+        item = (year, person["role"], person["scope"], person["source"])
+        if item not in roles:
+            roles.append(item)
+    roles.sort(key=lambda item: (item[0], item[1]))
     return roles
 
 
@@ -424,13 +444,26 @@ def _render_person(person, roles, organizations):
     return "\n".join(lines)
 
 
-def _render_people_index(people, editions):
+def _render_people_index(people, editions, regional_records):
     lines = ["# Personas", ""]
     for person in sorted(people.values(), key=lambda item: item["name"].casefold()):
-        roles = _person_roles(person["id"], editions)
+        roles = _person_roles(person["id"], editions, regional_records)
         latest = max((role[0] for role in roles), default=None)
         suffix = f" — actividad documentada hasta {latest}" if latest else ""
         lines.append(f"- [{_flag('AR')} {person['name']}]({person['id']}.md){suffix}")
+    return "\n".join(lines)
+
+
+def _render_regional_organizers(editions, regional_records):
+    grouped = defaultdict(list)
+    for year, person in _regional_assignments(editions, regional_records):
+        grouped[year].append(person)
+    lines = ["# Organización regional", ""]
+    for year in sorted(grouped, reverse=True):
+        lines += [f"## {year}", ""]
+        for person in grouped[year]:
+            lines.append(f"- {_person(person, '../personas/')}")
+        lines.append("")
     return "\n".join(lines)
 
 
@@ -460,12 +493,17 @@ def on_config(config):
     site_files = sorted((root / "data" / "sites").glob("*/*.yml"))
     organization_files = sorted((root / "data" / "organizations").glob("*.yml"))
     people_files = sorted((root / "data" / "people").glob("*.yml"))
+    regional_files = sorted((root / "data" / "regional_organizers").glob("*.yml"))
     organizations = {_load(path)["id"]: _load(path) for path in organization_files}
     people = {_load(path)["id"]: _load(path) for path in people_files}
     editions = {}
     for path in edition_files:
         edition = _resolve_people(_load(path), people)
         editions[edition["year"]] = edition
+    regional_records = {}
+    for path in regional_files:
+        record = _resolve_people(_load(path), people)
+        regional_records[record["year"]] = record
     sites = []
     for path in site_files:
         site = _load(path)
@@ -487,6 +525,10 @@ def on_config(config):
         _write(target / "sedes-por-provincia.md", _render_year_sites(year, year_sites, True))
         _write(target / "sedes-por-nombre.md", _render_year_sites(year, year_sites, False))
     _write(docs / "historia" / "anios" / "index.md", _render_editions_index(editions))
+    _write(
+        docs / "historia" / "organizacion-regional.md",
+        _render_regional_organizers(editions, regional_records),
+    )
 
     sites_by_organization = defaultdict(list)
     for site in sites:
@@ -521,11 +563,14 @@ def on_config(config):
             docs / "personas" / f"{person_id}.md",
             _render_person(
                 person,
-                _person_roles(person_id, editions),
+                _person_roles(person_id, editions, regional_records),
                 _person_organizations(person_id, sites, organizations),
             ),
         )
-    _write(docs / "personas" / "index.md", _render_people_index(people, editions))
+    _write(
+        docs / "personas" / "index.md",
+        _render_people_index(people, editions, regional_records),
+    )
     _write(docs / "sedes" / "index.md", _render_sites_index(sites))
     _write(docs / "sedes" / "por-provincia.md", _render_global_sites(sites, True))
     _write(docs / "sedes" / "por-nombre.md", _render_global_sites(sites, False))
