@@ -14,7 +14,7 @@ Gracias por ayudar a construir la memoria de GGJ Argentina.
 1. Creá un fork del repositorio.
 2. Trabajá en una rama con un nombre descriptivo.
 3. Modificá la ficha YAML correspondiente dentro de `data/`. El contenido narrativo no estructurado permanece dentro de `docs/`.
-4. Ejecutá `mkdocs build --strict` si tenés el entorno local instalado.
+4. Ejecutá `python hooks/site_builder.py` y luego `zensical build --strict` si tenés el entorno local instalado.
 5. Abrí un pull request y explicá qué agregaste, de dónde surge la información y cómo puede verificarse.
 
 Los cambios pequeños también pueden hacerse con el botón de edición de GitHub presente en cada página.
@@ -32,13 +32,14 @@ locality: Ciudad de ejemplo
 audience: ggj
 organization_id: organizacion-ejemplo
 participants: 42
+participants_basis: registered_members
 games: 8
 organizers:
   - person_id: persona-ejemplo
 source: https://ejemplo.org/fuente
 ```
 
-Los campos `participants` y `games` son opcionales. Cuando se informan, deben ser enteros iguales o mayores que cero. Los totales muestran tanto la suma como cuántas sedes aportaron el dato, para no presentar una cobertura parcial como total nacional.
+Los campos `participants` y `games` son opcionales. Cuando se informan, deben ser enteros iguales o mayores que cero. Usá `participants_basis: registered_members` cuando la cifra provenga de los integrantes registrados en la ficha oficial de GGJ y no de un conteo de asistencia presencial. Los totales muestran tanto la suma como cuántas sedes aportaron el dato, para no presentar una cobertura parcial como total nacional.
 
 Usá `audience: next` para una sede GGJ NEXT. Los campos `id` y `organization_id` deben ser estables. La organización referenciada debe tener una ficha en `data/organizations/`.
 

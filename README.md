@@ -2,7 +2,7 @@
 
 Sitio colaborativo para reunir memorias, experiencias y recursos de la comunidad de Global Game Jam en Argentina.
 
-El contenido narrativo se escribe en Markdown. Los datos de ediciones, eventos, organizaciones y personas se guardan en YAML; durante la compilación se generan automáticamente fichas, relaciones, índices y estadísticas. El sitio se publica con [MkDocs](https://www.mkdocs.org/) y [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+El contenido narrativo se escribe en Markdown. Los datos de ediciones, eventos, organizaciones y personas se guardan en YAML; durante la compilación se generan automáticamente fichas, relaciones, índices y estadísticas. El sitio se publica con [Zensical](https://zensical.org/).
 
 ## Ver el sitio localmente
 
@@ -12,20 +12,22 @@ Necesitás Python 3.10 o posterior.
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
-mkdocs serve
+python hooks/site_builder.py
+zensical serve
 ```
 
 Abrí `http://127.0.0.1:8000` en el navegador. Para comprobar que el sitio compila:
 
 ```bash
-mkdocs build --strict
+python hooks/site_builder.py
+zensical build --strict
 ```
 
 ## Contribuir
 
 Las correcciones, recuerdos, fotografías autorizadas y guías son bienvenidas. Leé [CONTRIBUTING.md](CONTRIBUTING.md) antes de enviar un cambio. No hace falta saber programación: también podés editar una página desde GitHub con el enlace de edición del sitio.
 
-Para informar un evento, editá o agregá un archivo dentro de `data/sites/AAAA/`. Los campos opcionales `participants` y `games` alimentan automáticamente los totales, que siempre indican cuántas sedes reportaron cada cifra. Las organizaciones viven en `data/organizations/` y las personas argentinas en `data/people/`; se las relaciona mediante sus identificadores estables. No edites las páginas generadas dentro de `docs/sedes/fichas/`, `docs/organizaciones/`, `docs/personas/` o `docs/historia/anios/AAAA/`.
+Para informar un evento, editá o agregá un archivo dentro de `data/sites/AAAA/`. Los campos opcionales `participants` y `games` alimentan automáticamente los totales, que siempre indican cuántas sedes reportaron cada cifra. Las organizaciones viven en `data/organizations/` y las personas argentinas en `data/people/`; se las relaciona mediante sus identificadores estables. Después de cambiar datos, ejecutá `python hooks/site_builder.py`. No edites las páginas generadas dentro de `docs/sedes/fichas/`, `docs/organizaciones/`, `docs/personas/` o `docs/historia/anios/AAAA/`.
 
 ## Publicación
 

@@ -6,10 +6,11 @@ repo_name: driconmax/ggj-argentina
 edit_uri: edit/main/docs/
 
 theme:
-  name: material
+  variant: modern
   language: es
   features:
     - navigation.sections
+    - navigation.path
     - navigation.top
     - search.highlight
     - search.suggest
@@ -36,13 +37,6 @@ extra_css:
 plugins:
   - search:
       lang: es
-
-hooks:
-  - hooks/site_builder.py
-
-watch:
-  - data
-  - hooks
 
 markdown_extensions:
   - admonition

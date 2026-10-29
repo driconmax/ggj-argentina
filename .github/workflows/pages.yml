@@ -32,7 +32,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Compilar sitio
-        run: mkdocs build --strict
+        run: |
+          python hooks/site_builder.py
+          zensical build --strict
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
