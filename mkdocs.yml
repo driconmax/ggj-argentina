@@ -38,7 +38,7 @@ plugins:
       lang: es
 
 hooks:
-  - hooks/build_pages.py
+  - hooks/site_builder.py
 
 watch:
   - data

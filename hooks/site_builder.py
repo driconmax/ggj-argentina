@@ -144,6 +144,48 @@ def _argentine_participation(edition):
 
 def _render_year(edition, sites):
     year = edition["year"]
+    if edition.get("status") == "en_preparacion":
+        lines = [
+            f"# Edición {year}",
+            "",
+            edition["intro"],
+            "",
+            "## Resumen",
+            "",
+            "| Dato | Estado |",
+            "| --- | --- |",
+            "| Edición | En preparación |",
+        ]
+        if edition.get("dates"):
+            lines.append(f"| Fechas globales | {_cell(edition['dates'])} |")
+        if edition.get("theme"):
+            theme = edition["theme"]
+            translation = f" ({_cell(theme['translation'])})" if theme.get("translation") else ""
+            lines.append(f"| Tema | **{_cell(theme['name'])}**{translation} |")
+        if edition.get("regional_organizers"):
+            lines += [
+                "",
+                "## Organización regional en Argentina",
+                "",
+                "| Rol | Persona | Período o alcance | Fuente |",
+                "| --- | --- | --- | --- |",
+            ]
+            for person in edition["regional_organizers"]:
+                lines.append(
+                    f"| {_cell(person['role'])} | {_person(person)} | "
+                    f"{_cell(person['scope'])} | {_cell(person['source'])} |"
+                )
+        if edition.get("executive_committee", {}).get("members"):
+            lines += ["", "## Equipo internacional", "", "### Executive Committee", ""]
+            lines += [
+                f"- {_person(person)}"
+                for person in edition["executive_committee"]["members"]
+            ]
+        if edition.get("sources"):
+            lines += ["", "## Fuentes", ""]
+            lines += [f"- [{source['title']}]({source['url']})" for source in edition["sources"]]
+        return "\n".join(lines)
+
     ggj_sites = [site for site in sites if site["audience"] == "ggj"]
     next_sites = [site for site in sites if site["audience"] == "next"]
     global_sites = edition["global_stats"]["sites"]
@@ -281,10 +323,15 @@ def _render_editions_index(editions):
     ]
     for year in sorted(editions, reverse=True):
         edition = editions[year]
-        lines.append(
-            f"- [{year}]({year}/index.md) — {edition['theme']['name']} "
-            f"({_cell(edition['theme']['translation'])})"
-        )
+        if edition.get("theme"):
+            detail = edition["theme"]["name"]
+            if edition["theme"].get("translation"):
+                detail += f" ({_cell(edition['theme']['translation'])})"
+        elif edition.get("status") == "en_preparacion":
+            detail = "En preparación"
+        else:
+            detail = "Edición documentada"
+        lines.append(f"- [{year}]({year}/index.md) — {detail}")
     return "\n".join(lines)
 
 
@@ -396,23 +443,34 @@ def _regional_assignments(editions, regional_records):
     return sorted(assignments, key=lambda item: item[0])
 
 
-def _person_roles(person_id, editions, regional_records):
+def _person_roles(person_id, editions, regional_records, sites):
     roles = []
+
+    def add(year, role, site=None):
+        item = {"year": year, "role": role, "site": site}
+        key = (year, role, site["id"] if site else None)
+        existing = {
+            (entry["year"], entry["role"], entry["site"]["id"] if entry["site"] else None)
+            for entry in roles
+        }
+        if key not in existing:
+            roles.append(item)
+
     for year, edition in sorted(editions.items()):
         for entry in _argentine_participation(edition):
             if entry["person"].get("person_id") != person_id:
                 continue
-            for role, scope, source in entry["roles"]:
-                item = (year, role, scope, source)
-                if item not in roles:
-                    roles.append(item)
+            for role, _scope, _source in entry["roles"]:
+                add(year, role)
     for year, person in _regional_assignments(editions, regional_records):
         if person.get("person_id") != person_id:
             continue
-        item = (year, person["role"], person["scope"], person["source"])
-        if item not in roles:
-            roles.append(item)
-    roles.sort(key=lambda item: (item[0], item[1]))
+        add(year, person["role"])
+    for site in sites:
+        for organizer in site.get("organizers", []):
+            if isinstance(organizer, dict) and organizer.get("person_id") == person_id:
+                add(site["year"], "Organización local", site)
+    roles.sort(key=lambda item: item["year"])
     return roles
 
 
@@ -425,18 +483,48 @@ def _person_organizations(person_id, sites, organizations):
     return list(related.values())
 
 
-def _render_person(person, roles, organizations):
+def _render_person(person, roles, organizations, editions):
     lines = [f"# {_flag('AR')} {person['name']}", ""]
-    if person.get("summary"):
-        lines += [person["summary"], ""]
+    if person.get("photo"):
+        lines += [f"![Foto de {_cell(person['name'])}]({person['photo']}){{ width=\"240\" }}", ""]
+    biography = person.get("bio") or person.get("summary")
+    if biography:
+        lines += [biography, ""]
     if roles:
-        lines += ["## Roles en Global Game Jam", "", "| Año | Rol | Alcance |", "| --- | --- | --- |"]
-        for year, role, scope, _source in roles:
-            lines.append(f"| {year} | {_cell(role)} | {_cell(scope)} |")
+        grouped = defaultdict(list)
+        for entry in roles:
+            if entry["site"]:
+                site = entry["site"]
+                label = (
+                    f"{_cell(entry['role'])} — "
+                    f"[{_cell(site['name'])}](../sedes/fichas/{site['id']}.md)"
+                )
+            else:
+                label = _cell(entry["role"])
+            if label not in grouped[entry["year"]]:
+                grouped[entry["year"]].append(label)
+        lines += [
+            "## Participación en Global Game Jam",
+            "",
+            "| Edición | Participación |",
+            "| --- | --- |",
+        ]
+        for year in sorted(grouped):
+            edition = f"[{year}](../historia/anios/{year}/index.md)" if year in editions else str(year)
+            lines.append(f"| {edition} | {'<br>'.join(grouped[year])} |")
     if organizations:
         lines += ["", "## Organizaciones", ""]
         for organization in sorted(organizations, key=lambda item: item["name"].casefold()):
             lines.append(f"- [{organization['name']}](../organizaciones/fichas/{organization['id']}.md)")
+    links = []
+    if person.get("website"):
+        links.append(("Sitio web", person["website"]))
+    for link in person.get("links", []):
+        links.append((link["label"], link["url"]))
+    if links:
+        lines += ["", "## Enlaces", ""]
+        for label, url in links:
+            lines.append(f"- [{_cell(label)}]({url})")
     if person.get("sources"):
         lines += ["", "## Fuentes", ""]
         for source in person["sources"]:
@@ -444,11 +532,11 @@ def _render_person(person, roles, organizations):
     return "\n".join(lines)
 
 
-def _render_people_index(people, editions, regional_records):
+def _render_people_index(people, editions, regional_records, sites):
     lines = ["# Personas", ""]
     for person in sorted(people.values(), key=lambda item: item["name"].casefold()):
-        roles = _person_roles(person["id"], editions, regional_records)
-        latest = max((role[0] for role in roles), default=None)
+        roles = _person_roles(person["id"], editions, regional_records, sites)
+        latest = max((role["year"] for role in roles), default=None)
         suffix = f" — actividad documentada hasta {latest}" if latest else ""
         lines.append(f"- [{_flag('AR')} {person['name']}]({person['id']}.md){suffix}")
     return "\n".join(lines)
@@ -504,6 +592,9 @@ def on_config(config):
     for path in regional_files:
         record = _resolve_people(_load(path), people)
         regional_records[record["year"]] = record
+    for year, record in regional_records.items():
+        if year in editions and not editions[year].get("regional_organizers"):
+            editions[year]["regional_organizers"] = record["regional_organizers"]
     sites = []
     for path in site_files:
         site = _load(path)
@@ -522,8 +613,9 @@ def on_config(config):
         year_sites = [site for site in sites if site["year"] == year]
         target = docs / "historia" / "anios" / str(year)
         _write(target / "index.md", _render_year(edition, year_sites))
-        _write(target / "sedes-por-provincia.md", _render_year_sites(year, year_sites, True))
-        _write(target / "sedes-por-nombre.md", _render_year_sites(year, year_sites, False))
+        if year_sites:
+            _write(target / "sedes-por-provincia.md", _render_year_sites(year, year_sites, True))
+            _write(target / "sedes-por-nombre.md", _render_year_sites(year, year_sites, False))
     _write(docs / "historia" / "anios" / "index.md", _render_editions_index(editions))
     _write(
         docs / "historia" / "organizacion-regional.md",
@@ -563,13 +655,14 @@ def on_config(config):
             docs / "personas" / f"{person_id}.md",
             _render_person(
                 person,
-                _person_roles(person_id, editions, regional_records),
+                _person_roles(person_id, editions, regional_records, sites),
                 _person_organizations(person_id, sites, organizations),
+                editions,
             ),
         )
     _write(
         docs / "personas" / "index.md",
-        _render_people_index(people, editions, regional_records),
+        _render_people_index(people, editions, regional_records, sites),
     )
     _write(docs / "sedes" / "index.md", _render_sites_index(sites))
     _write(docs / "sedes" / "por-provincia.md", _render_global_sites(sites, True))

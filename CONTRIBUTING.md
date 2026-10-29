@@ -66,13 +66,20 @@ Las personas argentinas con participación documentada tienen una ficha en `data
 id: persona-ejemplo
 name: Nombre completo
 countries: [AR]
-summary: Perfil breve y verificable.
+bio: Perfil breve y verificable.
+photo: ../assets/images/personas/persona-ejemplo.jpg
+website: https://ejemplo.org/
+links:
+  - label: Perfil profesional
+    url: https://ejemplo.org/perfil
 sources:
   - title: Fuente del perfil
     url: https://ejemplo.org/fuente
 ```
 
-Para reutilizarla en una edición o como integrante de la organización local de un evento, usá `person_id: persona-ejemplo` en lugar de repetir el nombre. Sus roles y organizaciones relacionadas aparecerán automáticamente en su perfil.
+`bio`, `photo`, `website`, `links` y `sources` son opcionales. Las fotografías locales se guardan dentro de `docs/assets/images/personas/`; la ruta se escribe desde la página generada en `docs/personas/`.
+
+Para reutilizar una persona en una edición o como integrante de la organización local de un evento, usá `person_id: persona-ejemplo` en lugar de repetir el nombre. Sus participaciones se agrupan automáticamente por edición. El año enlaza al resumen de esa edición y los roles de organización local enlazan a la ficha del evento.
 
 La organización regional de un año que todavía no tenga una edición completa puede registrarse en `data/regional_organizers/AAAA.yml`. Ese dato alimenta el índice histórico y las fichas personales sin necesidad de crear estadísticas o contenidos aún desconocidos.
 
