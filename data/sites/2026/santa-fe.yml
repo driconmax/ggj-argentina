@@ -5,4 +5,8 @@ province: Santa Fe
 locality: Santa Fe capital
 audience: ggj
 organization_id: santa-fe-ggj
-source: https://globalgamejam.org/map/2026
+participants: 40
+participants_basis: registered_members
+games: 8
+organizers: [Oblongo]
+source: https://globalgamejam.org/jam-sites/2026/ggj-santa-fe-virtual

@@ -5,4 +5,16 @@ province: Córdoba
 locality: Córdoba capital
 audience: ggj
 organization_id: cordoba-game-jam-vico
-source: https://globalgamejam.org/map/2026
+participants: 191
+participants_basis: registered_members
+games: 29
+organizers:
+  - Nicolas Peralta
+  - person_id: gustavo-gabriel-gonzalez
+  - person_id: debora-sofia-theaux-leutgeb
+  - Ezequiel.exe
+  - IreMolina
+  - EugeTempo
+  - Anashex
+  - Tata_deo
+source: https://globalgamejam.org/jam-sites/2026/cordoba-game-jam-vico

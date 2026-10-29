@@ -5,4 +5,8 @@ province: Buenos Aires
 locality: Bahía Blanca
 audience: ggj
 organization_id: dvbahia
-source: https://globalgamejam.org/map/2026
+participants: 36
+participants_basis: registered_members
+games: 9
+organizers: [gonzalb, VVizard22]
+source: https://globalgamejam.org/jam-sites/2026/dvbahia-ggj-2026

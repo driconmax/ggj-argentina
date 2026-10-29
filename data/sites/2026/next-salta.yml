@@ -5,4 +5,10 @@ province: Salta
 locality: Salta capital
 audience: next
 organization_id: polivalente-arte-salta
-source: https://globalgamejam.org/map/2026
+participants: 2
+participants_basis: registered_members
+games: 0
+organizers:
+  - Rich Hebblewhite
+  - person_id: ariel-silvio-norberto-ramos
+source: https://globalgamejam.org/jam-sites/2026/global-games-jam-polivalente-de-arte

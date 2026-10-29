@@ -5,4 +5,8 @@ province: Mendoza
 locality: Ciudad de Mendoza
 audience: ggj
 organization_id: globant
-source: https://globalgamejam.org/map/2026
+participants: 90
+participants_basis: registered_members
+games: 21
+organizers: [guinunez, RuloDulo, Nicolasmurga]
+source: https://globalgamejam.org/jam-sites/2026/global-game-jam-mendoza-globant

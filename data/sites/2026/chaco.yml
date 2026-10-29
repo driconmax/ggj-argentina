@@ -3,6 +3,10 @@ year: 2026
 name: Chaco GGJN26
 province: Chaco
 locality: Presidencia Roque Sáenz Peña
-audience: ggj
+audience: next
 organization_id: chaco-ggjn
-source: https://globalgamejam.org/map/2026
+participants: 1
+participants_basis: registered_members
+games: 0
+organizers: [Rich Hebblewhite]
+source: https://globalgamejam.org/jam-sites/2026/chaco-ggjn26

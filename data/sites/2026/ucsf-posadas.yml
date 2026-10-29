@@ -5,6 +5,9 @@ province: Misiones
 locality: Posadas
 audience: ggj
 organization_id: ucsf
+participants: 18
+participants_basis: registered_members
+games: 5
 format: Híbrida
 organizers: [IndianaNesti, gastoncaminiti, Marisa Conde, Nickpomelo]
 source: https://globalgamejam.org/jam-sites/2026/ucsf-universidad-catolica-de-santa-fe-sede-santos-martires-posadas-prov-de-misiones

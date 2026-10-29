@@ -5,4 +5,8 @@ province: Buenos Aires
 locality: Mar del Plata
 audience: ggj
 organization_id: globant
-source: https://globalgamejam.org/map/2026
+participants: 51
+participants_basis: registered_members
+games: 15
+organizers: [Mariano Mariscal, Matias Molusko, soffpaz, Matorvastatin, chexmo, JPCard, Franco Ponce, Flor Malvina]
+source: https://globalgamejam.org/jam-sites/2026/globant-mar-del-plata

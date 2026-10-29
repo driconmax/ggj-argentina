@@ -5,4 +5,8 @@ province: Tierra del Fuego
 locality: Ushuaia
 audience: ggj
 organization_id: fgd
-source: https://globalgamejam.org/map/2026
+participants: 6
+participants_basis: registered_members
+games: 1
+organizers: [joserogel]
+source: https://globalgamejam.org/jam-sites/2026/10deg-edicion-tierra-del-fuego-fgd-ushuaia

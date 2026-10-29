@@ -5,4 +5,9 @@ province: Jujuy
 locality: San Salvador de Jujuy
 audience: next
 organization_id: faro-del-saber
-source: https://globalgamejam.org/map/2026
+participants: 1
+participants_basis: registered_members
+games: 0
+organizers:
+  - person_id: ariel-silvio-norberto-ramos
+source: https://globalgamejam.org/jam-sites/2026/ggj-next-punto-digital-faro-del-saber-jujuy-argentina

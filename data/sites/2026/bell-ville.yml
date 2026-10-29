@@ -5,4 +5,8 @@ province: Córdoba
 locality: Bell Ville
 audience: ggj
 organization_id: upc-bell-ville
-source: https://globalgamejam.org/map/2026
+participants: 16
+participants_basis: registered_members
+games: 4
+organizers: [LuciusDesign]
+source: https://globalgamejam.org/jam-sites/2026/sede-mariano-moreno-upc-bell-ville

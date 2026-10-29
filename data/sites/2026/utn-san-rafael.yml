@@ -5,4 +5,8 @@ province: Mendoza
 locality: San Rafael
 audience: ggj
 organization_id: utn-san-rafael
-source: https://globalgamejam.org/map/2026
+participants: 14
+participants_basis: registered_members
+games: 7
+organizers: [dagnais, Adrian Oyarce]
+source: https://globalgamejam.org/jam-sites/2026/utn-san-rafael

@@ -5,6 +5,9 @@ province: Buenos Aires
 locality: González Catán
 audience: ggj
 organization_id: cudi
+participants: 43
+participants_basis: registered_members
+games: 8
 format: Híbrida
 organizers: [Maxi Diaz, Esteban Quintero]
 source: https://globalgamejam.org/jam-sites/2026/cudi-global-game-jam-2026

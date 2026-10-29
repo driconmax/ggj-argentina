@@ -5,6 +5,9 @@ province: Ciudad Autónoma de Buenos Aires
 locality: Ciudad Autónoma de Buenos Aires
 audience: ggj
 organization_id: uade
+participants: 81
+participants_basis: registered_members
+games: 18
 format: Híbrida
 organizers: [Martin.Romero]
 source: https://globalgamejam.org/jam-sites/2026/global-game-jam-uade-2026

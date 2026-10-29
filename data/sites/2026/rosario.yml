@@ -5,4 +5,8 @@ province: Santa Fe
 locality: Rosario
 audience: ggj
 organization_id: rosario-ggj
-source: https://globalgamejam.org/map/2026
+participants: 42
+participants_basis: registered_members
+games: 17
+organizers: [DavidRuiz]
+source: https://globalgamejam.org/jam-sites/2026/rosario-ggj

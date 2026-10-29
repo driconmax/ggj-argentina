@@ -5,4 +5,8 @@ province: San Juan
 locality: Villa Krause
 audience: ggj
 organization_id: adev
-source: https://globalgamejam.org/map/2026
+participants: 11
+participants_basis: registered_members
+games: 6
+organizers: [ADEV San Juan]
+source: https://globalgamejam.org/jam-sites/2026/adev-san-juan

@@ -5,5 +5,8 @@ province: Tierra del Fuego
 locality: Río Grande
 audience: ggj
 organization_id: fgd
+participants: 4
+participants_basis: registered_members
+games: 3
 organizers: [Nabu]
 source: https://globalgamejam.org/jam-sites/2026/fgd-gjj-10deg-edicion-tierra-del-fuego
