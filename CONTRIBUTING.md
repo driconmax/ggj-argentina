@@ -97,3 +97,19 @@ La organización regional de un año que todavía no tenga una edición completa
 Al enviar un cambio confirmás que tenés derecho a compartir el material bajo las licencias indicadas en el repositorio.
 
 Las conversaciones deben ser respetuosas y centrarse en mejorar el contenido. Los desacuerdos sobre hechos históricos deben resolverse con fuentes o señalando claramente las versiones existentes.
+
+## Licencias y derechos de las contribuciones
+
+Al enviar una contribución original a GGJ Argentina, aceptás que:
+
+- **Contenido y documentación:** tu contribución se publique bajo la licencia [Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.es).
+- **Código fuente:** tus contribuciones de código, scripts y configuraciones se publiquen bajo la licencia MIT.
+- **Permiso especial para Global Game Jam:** otorgás a Global Game Jam, Inc. una autorización gratuita, mundial, no exclusiva e irrevocable para utilizar, reproducir, modificar, traducir y redistribuir tus contribuciones originales de contenido y documentación, incluso con fines comerciales, sin obligación de atribución ni de distribuir las adaptaciones bajo CC BY-SA 4.0.
+
+**Conservás los derechos de autor sobre tus contribuciones.** Esta autorización no implica transferir su titularidad a GGJ Argentina ni a Global Game Jam, Inc.
+
+Al contribuir, confirmás que sos titular de los derechos necesarios para conceder estos permisos.
+
+Si incorporás materiales de terceros, debés identificar su origen y licencia, y contar con las autorizaciones correspondientes. El permiso especial para Global Game Jam no se extiende a esos materiales sin autorización de sus titulares.
+
+Las condiciones completas se encuentran en [`LICENSE`](LICENSE), [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md) y [`docs/licencia.md`](docs/licencia.md).
