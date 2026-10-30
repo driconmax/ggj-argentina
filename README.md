@@ -1,4 +1,4 @@
-# GGJ Argentina
+# GGJ en Argentina
 
 Sitio colaborativo para reunir memorias, experiencias y recursos de la comunidad de Global Game Jam en Argentina.
 
@@ -35,7 +35,7 @@ Los cambios incorporados a `main` se compilan y publican automáticamente median
 
 ## Licencia
 
-GGJ Argentina proyecto colaborativo de código abierto.
+GGJ en Argentina proyecto colaborativo de código abierto.
 
 - **Contenido y documentación:** [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.es). Se permite compartir, modificar y reutilizar el contenido, incluso comercialmente, siempre que se reconozca la autoría y las adaptaciones mantengan la misma licencia.
 - **Código y configuración:** [MIT](https://opensource.org/licenses/MIT). Se permite utilizar, modificar y distribuir libremente el código, conservando los avisos de derechos de autor y licencia.

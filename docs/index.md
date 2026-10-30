@@ -1,4 +1,4 @@
-# GGJ Argentina
+# GGJ en Argentina
 
 Este sitio busca construir, de manera colaborativa, una memoria de las ediciones, sedes y aprendizajes de la comunidad de Global Game Jam en Argentina.
 

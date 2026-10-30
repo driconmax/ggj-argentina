@@ -1,6 +1,6 @@
-# Licencia del contenido — GGJ Argentina
+# Licencia del contenido — GGJ en Argentina
 
-Copyright (c) 2026 driconmax y colaboradores de GGJ Argentina.
+Copyright (c) 2026 driconmax y colaboradores de GGJ en Argentina.
 
 ## Licencia general
 
@@ -61,10 +61,10 @@ El código fuente original, los scripts y las configuraciones desarrollados para
 
 Para reutilizar contenido bajo CC BY-SA 4.0, se recomienda la siguiente referencia, junto con los créditos adicionales que correspondan:
 
-> GGJ Argentina — Documentación colaborativa de la comunidad argentina de Global Game Jam. CC BY-SA 4.0.
+> GGJ en Argentina — Documentación colaborativa de la comunidad argentina de Global Game Jam. CC BY-SA 4.0.
 
 ## Independencia del proyecto
 
-GGJ Argentina es una iniciativa colaborativa de documentación comunitaria.
+GGJ en Argentina es una iniciativa colaborativa de documentación comunitaria.
 
 La concesión de permisos especiales a Global Game Jam, Inc. no implica que este proyecto sea una publicación oficial de dicha organización ni que esta respalde necesariamente sus contenidos.

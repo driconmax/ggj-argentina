@@ -1,4 +1,4 @@
-site_name: GGJ Argentina
+site_name: GGJ en Argentina
 site_description: Memoria y recursos colaborativos de la comunidad Global Game Jam en Argentina
 site_url: https://driconmax.github.io/ggj-argentina/
 repo_url: https://github.com/driconmax/ggj-argentina
@@ -74,4 +74,4 @@ nav:
   - Recursos: recursos/index.md
   - Licencia: licencia.md
 
-copyright: Contenido mantenido por la comunidad de GGJ Argentina
+copyright: Contenido mantenido por la comunidad de GGJ en Argentina

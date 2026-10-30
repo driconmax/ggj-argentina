@@ -1,6 +1,6 @@
 # Licencia
 
-GGJ Argentina es un proyecto colaborativo dedicado a preservar, documentar y compartir la historia, los conocimientos y los recursos de la comunidad argentina de Global Game Jam.
+GGJ en Argentina es un proyecto colaborativo dedicado a preservar, documentar y compartir la historia, los conocimientos y los recursos de la comunidad argentina de Global Game Jam.
 
 Nuestro objetivo es que esta información permanezca abierta, accesible y disponible para toda la comunidad.
 
@@ -52,12 +52,12 @@ Los materiales de terceros solo podrán incorporarse cuando exista autorización
 
 Para reutilizar contenido del proyecto, podés utilizar la siguiente referencia:
 
-> GGJ Argentina — Documentación colaborativa de la comunidad argentina de Global Game Jam. Licencia CC BY-SA 4.0.
+> GGJ en Argentina — Documentación colaborativa de la comunidad argentina de Global Game Jam. Licencia CC BY-SA 4.0.
 
 Se recomienda incluir un enlace al contenido original y reconocer a sus autores cuando estén identificados.
 
 ## Sobre el proyecto
 
-GGJ Argentina es una iniciativa colaborativa de documentación comunitaria.
+GGJ en Argentina es una iniciativa colaborativa de documentación comunitaria.
 
 Su contenido no representa necesariamente las opiniones ni las posiciones oficiales de Global Game Jam, Inc.
