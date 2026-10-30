@@ -6,13 +6,13 @@ El archivo crece mediante aportes verificables de organizadores, sedes y partici
 
 ## Qué vas a encontrar
 
-- **Historia:** registros de cada edición, con fuentes y testimonios cuando estén disponibles.
-- **Sedes:** un directorio de sedes documentadas por la comunidad.
-- **Organizaciones:** sus eventos y recorridos a través de distintas ediciones.
-- **Personas:** perfiles de participantes argentinos con roles documentados.
+- **[Historia](historia/index.md):** registros de cada edición, con fuentes y testimonios cuando estén disponibles.
+- **[Sedes](sedes/index.md):** un directorio de sedes documentadas por la comunidad.
+- **[Organizaciones](organizaciones/index.md):** sus eventos y recorridos a través de distintas ediciones.
+- **[Personas](personas/index.md):** perfiles de participantes argentinos con roles documentados.
 - **[Guía del jammer](guia-jammer.md):** consejos para participar y crear en equipo.
-- **Organización:** aprendizajes y listas de verificación para organizar encuentros.
-- **Recursos:** enlaces, materiales y herramientas que hayan resultado útiles.
+- **[Organización](organizacion/index.md):** aprendizajes y listas de verificación para organizar encuentros.
+- **[Recursos](recursos/index.md):** enlaces, materiales y herramientas que hayan resultado útiles.
 
 ## Sumate
 
