@@ -2,7 +2,7 @@
 
 # Sedes
 
-El directorio reúne **48 eventos**, correspondientes a **30 organizaciones** en **2 ediciones**.
+El directorio reúne **51 eventos**, correspondientes a **31 organizaciones** en **3 ediciones**.
 
 - [Por provincia](por-provincia.md)
 - [Por nombre](por-nombre.md)

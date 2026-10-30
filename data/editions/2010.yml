@@ -1,12 +1,35 @@
 year: 2010
 status: historica
+intro: >-
+  La segunda Global Game Jam se realizó del 29 al 31 de enero de 2010, como
+  proyecto de la International Game Developers Association (IGDA). Argentina
+  participó por primera vez en esta edición.
+dates: 29 al 31 de enero de 2010
 theme:
   name: "Deception"
+  translation: Engaño
 global_stats:
   sites: 138
   countries: 39
   participants: 4300
   games: 900
+executive_committee:
+  period: 2009–2010
+  members:
+    - {name: Susan Gold}
+    - {name: Foaad Khosmood, countries: [US]}
+    - {name: Gorm Lai, countries: [DK]}
+    - {name: Ian Schreiber, countries: [US]}
+keynote_speakers:
+  - {name: Ste Curran, countries: [GB]}
+videos:
+  - title: Keynote de Global Game Jam 2010
+    youtube_id: cm4mgMTTN4Q
+    description: Presentación de Ste Curran para la edición 2010.
 sources:
+  - title: Global Game Jam — primer año de participación por país
+    url: https://globalgamejam.org/ggj-participation
   - title: Global Game Jam History
     url: https://globalgamejam.org/history
+  - title: Keynote oficial de 2010
+    url: https://www.youtube.com/watch?v=cm4mgMTTN4Q

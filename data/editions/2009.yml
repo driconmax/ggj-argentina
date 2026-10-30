@@ -1,12 +1,42 @@
 year: 2009
 status: historica
+intro: >-
+  La primera Global Game Jam se celebró del 30 de enero al 1 de febrero de
+  2009. En ese período, la jam era un proyecto de la International Game
+  Developers Association (IGDA). Según el registro de GGJ, Argentina comenzó
+  a participar en 2010.
+dates: 30 de enero al 1 de febrero de 2009
 theme:
   name: "As long as we have each other, we will never run out of problems"
+  translation: Mientras nos tengamos los unos a los otros, nunca nos faltarán problemas
+  note: >-
+    Además del tema común, los juegos debían poder jugarse en cinco minutos o
+    menos. Cada zona horaria recibió tres palabras y los equipos debían
+    incorporar una de ellas.
 global_stats:
   sites: 53
   countries: 23
   participants: 1650
   games: 370
+executive_committee:
+  period: 2008–2009
+  members:
+    - {name: Susan Gold}
+    - {name: Foaad Khosmood, countries: [US]}
+    - {name: Gorm Lai, countries: [DK]}
+    - {name: Ian Schreiber, countries: [US]}
+keynote_speakers:
+  - {name: Kyle Gabler}
+videos:
+  - title: Keynote de la primera Global Game Jam
+    youtube_id: aW6vgW8wc6c
+    description: Presentación de Kyle Gabler para la edición 2009.
 sources:
+  - title: Global Game Jam — primer año de participación por país
+    url: https://globalgamejam.org/ggj-participation
   - title: Global Game Jam History
     url: https://globalgamejam.org/history
+  - title: Global Game Jam 2009 — A Worldwide Report
+    url: https://www.gamedeveloper.com/business/global-game-jam-2009-a-worldwide-report
+  - title: Keynote oficial de 2009
+    url: https://www.youtube.com/watch?v=aW6vgW8wc6c

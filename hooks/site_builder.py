@@ -20,6 +20,7 @@ FLAGS = {
     "CN": ("🇨🇳", "China"),
     "CO": ("🇨🇴", "Colombia"),
     "DE": ("🇩🇪", "Alemania"),
+    "DK": ("🇩🇰", "Dinamarca"),
     "ES": ("🇪🇸", "España"),
     "FI": ("🇫🇮", "Finlandia"),
     "FR": ("🇫🇷", "Francia"),
@@ -240,9 +241,9 @@ def _render_year(edition, sites):
         if sites:
             ggj = [site for site in sites if site['audience'] == 'ggj']
             nxt = [site for site in sites if site['audience'] == 'next']
-            lines.append(f"| Sedes GGJ en Argentina | {len(ggj)} |")
+            lines.append(f"| Sedes GGJ documentadas en Argentina | {len(ggj)} |")
             if stats.get('sites'):
-                lines.append(f"| Sedes argentinas sobre el total global | {_share(len(ggj), stats['sites'])} % |")
+                lines.append(f"| Sedes argentinas documentadas sobre el total global | {_share(len(ggj), stats['sites'])} % |")
             for key, label, global_key in (('participants', 'Miembros registrados', 'participants'), ('games', 'Juegos', 'games')):
                 known = [site[key] for site in ggj if site.get(key) is not None]
                 if known:
@@ -250,8 +251,12 @@ def _render_year(edition, sites):
                     if stats.get(global_key):
                         qualifier = ' (cobertura parcial)' if len(known) < len(ggj) else ''
                         lines.append(f"| {label} sobre el total global | {_share(sum(known), stats[global_key])} %{qualifier} |")
-            lines.append(f"| Sedes GGJ NEXT en Argentina | {len(nxt)}, contabilizadas aparte |")
-            lines += ["", "Los miembros registrados en las fichas oficiales no equivalen necesariamente a asistencia presencial."]
+            if nxt:
+                lines.append(f"| Sedes GGJ NEXT en Argentina | {len(nxt)}, contabilizadas aparte |")
+            if any(site.get('participants_basis') == 'registered_members' for site in ggj):
+                lines += ["", "Los miembros registrados en las fichas oficiales no equivalen necesariamente a asistencia presencial."]
+            else:
+                lines.append("")
         if edition.get('regional_organizers'):
             lines += ['', '## Organización regional en Argentina', '']
             for person in edition['regional_organizers']:
@@ -294,6 +299,12 @@ def _render_year(edition, sites):
                 lines.append(f"| {_person(entry['person'], role_codes=codes)} | {roles} | {scopes} |")
             lines.append('')
         lines += _edition_videos(edition)
+        if edition.get('theme', {}).get('note'):
+            lines += [f"## Tema: {_cell(edition['theme']['name'])}", '', edition['theme']['note'], '']
+        if edition.get('keynote_speakers'):
+            lines += ['## Keynote', '']
+            lines += [f"- {_person(person)}" for person in edition['keynote_speakers']]
+            lines.append('')
         if edition.get('survey_note'):
             lines += ['## Alcance global', '', edition['survey_note'], '']
         if sites:

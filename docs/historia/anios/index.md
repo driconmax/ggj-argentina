@@ -21,5 +21,5 @@ Cada edición reúne su contexto, organización regional, estructura internacion
 - [2013](2013/index.md) — The Sound of a Heartbeat
 - [2012](2012/index.md) — Ouroboros
 - [2011](2011/index.md) — Extinction
-- [2010](2010/index.md) — Deception
-- [2009](2009/index.md) — As long as we have each other, we will never run out of problems
+- [2010](2010/index.md) — Deception (Engaño)
+- [2009](2009/index.md) — As long as we have each other, we will never run out of problems (Mientras nos tengamos los unos a los otros, nunca nos faltarán problemas)
