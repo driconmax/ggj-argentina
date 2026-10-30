@@ -10,6 +10,7 @@ El archivo crece mediante aportes verificables de organizadores, sedes y partici
 - **Sedes:** un directorio de sedes documentadas por la comunidad.
 - **Organizaciones:** sus eventos y recorridos a través de distintas ediciones.
 - **Personas:** perfiles de participantes argentinos con roles documentados.
+- **[Guía del jammer](guia-jammer.md):** consejos para participar y crear en equipo.
 - **Organización:** aprendizajes y listas de verificación para organizar encuentros.
 - **Recursos:** enlaces, materiales y herramientas que hayan resultado útiles.
 
