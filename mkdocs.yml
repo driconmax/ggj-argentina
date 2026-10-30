@@ -61,8 +61,10 @@ nav:
   - Personas: personas/index.md
   - Organización:
       - Guía general: organizacion/index.md
+      - Guía de fechas: organizacion/cronograma.md
       - Antes del evento: organizacion/antes-del-evento.md
       - Durante y después: organizacion/durante-y-despues.md
+      - Plantillas: organizacion/plantillas.md
   - Recursos: recursos/index.md
   - Licencia: licencia.md
 
