@@ -19,6 +19,19 @@ Gracias por ayudar a construir la memoria de GGJ Argentina.
 
 Los cambios pequeños también pueden hacerse con el botón de edición de GitHub presente en cada página.
 
+## Videos de una edición
+
+Para incorporar videos en una edición, agregá una lista `videos` a su archivo en `data/editions/AAAA.yml`. Cada entrada lleva un título, el identificador de YouTube y, opcionalmente, una descripción:
+
+```yaml
+videos:
+  - title: Video de las sedes argentinas
+    youtube_id: jiIYst4ebic
+    description: Video realizado por las sedes de Argentina.
+```
+
+El identificador es la parte que aparece después de `v=` en el enlace de YouTube. La página de la edición incorpora el video y un enlace para verlo en YouTube.
+
 ## Fichas de sede
 
 Cada sede tiene un único archivo YAML. No edites manualmente los índices ni las páginas dentro de `docs/sedes/fichas/`: se regeneran durante la compilación.

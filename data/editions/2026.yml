@@ -4,6 +4,10 @@ intro: >-
   el 1 de febrero de 2026. Cada sede pudo elegir dentro de esos seis días la
   ventana de 48 horas más conveniente para su comunidad.
 dates: 26 de enero al 1 de febrero de 2026
+videos:
+  - title: Video de las sedes argentinas
+    youtube_id: jiIYst4ebic
+    description: Video realizado por las sedes de Argentina y organizado por la organización regional de la edición 2026.
 theme:
   name: Mask
   translation: Máscara

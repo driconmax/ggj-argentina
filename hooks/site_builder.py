@@ -6,6 +6,8 @@ texto público contiene únicamente información destinada a lectores del sitio.
 
 from collections import defaultdict
 from pathlib import Path
+import html
+import re
 
 import yaml
 
@@ -185,6 +187,32 @@ def _argentine_participation(edition):
     return [people[name] for name in sorted(people, key=str.casefold)]
 
 
+def _edition_videos(edition):
+    videos = edition.get("videos", [])
+    if not videos:
+        return []
+    lines = ["## Videos de la edición", ""]
+    for video in videos:
+        video_id = video["youtube_id"]
+        if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
+            raise ValueError(f"ID de video de YouTube inválido: {video_id}")
+        title = html.escape(video["title"], quote=True)
+        lines += [f"### {_cell(video['title'])}", ""]
+        if video.get("description"):
+            lines += [video["description"], ""]
+        lines += [
+            '<div class="edition-video">',
+            f'<iframe src="https://www.youtube-nocookie.com/embed/{video_id}" '
+            f'title="{title}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; '
+            'encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '</div>',
+            "",
+            f"[Ver en YouTube](https://www.youtube.com/watch?v={video_id})",
+            "",
+        ]
+    return lines
+
+
 def _render_year(edition, sites):
     year = edition["year"]
     breadcrumb = _breadcrumb([
@@ -230,6 +258,7 @@ def _render_year(edition, sites):
                 f"- {_person(person, role_codes=['EC'])}"
                 for person in edition["executive_committee"]["members"]
             ]
+        lines += [""] + _edition_videos(edition)
         if edition.get("sources"):
             lines += ["", "## Fuentes", ""]
             lines += [f"- [{source['title']}]({source['url']})" for source in edition["sources"]]
@@ -321,6 +350,7 @@ def _render_year(edition, sites):
         codes = [code for role, _scope, _source in entry["roles"] for code in _role_codes(role)]
         lines.append(f"| {_person(entry['person'], role_codes=codes)} | {roles} | {scopes} |")
 
+    lines += [""] + _edition_videos(edition)
     lines += [
         "",
         f"## Tema: {edition['theme']['name']}",

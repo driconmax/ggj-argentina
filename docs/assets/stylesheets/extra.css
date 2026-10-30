@@ -71,6 +71,19 @@
   margin-right: 0.15em;
 }
 
+.edition-video {
+  aspect-ratio: 16 / 9;
+  max-width: 48rem;
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+
+.edition-video iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .content-breadcrumb {
   align-items: center;
   color: var(--md-default-fg-color--light);
