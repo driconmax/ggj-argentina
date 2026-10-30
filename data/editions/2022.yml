@@ -1,0 +1,12 @@
+year: 2022
+status: historica
+theme:
+  name: "Duality"
+global_stats:
+  sites: 680
+  countries: 100
+  participants: 33000
+  games: 5860
+sources:
+  - title: Global Game Jam Press Kit
+    url: https://globalgamejam.org/global-game-jam-press-kit

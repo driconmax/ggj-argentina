@@ -1,0 +1,12 @@
+year: 2019
+status: historica
+theme:
+  name: "What home means to you"
+global_stats:
+  sites: 860
+  countries: 113
+  participants: 47006
+  games: 9010
+sources:
+  - title: Global Game Jam Press Kit
+    url: https://globalgamejam.org/global-game-jam-press-kit

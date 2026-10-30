@@ -1,0 +1,12 @@
+year: 2011
+status: historica
+theme:
+  name: "Extinction"
+global_stats:
+  sites: 169
+  countries: 44
+  participants: 6500
+  games: 900
+sources:
+  - title: Global Game Jam Press Kit
+    url: https://globalgamejam.org/global-game-jam-press-kit

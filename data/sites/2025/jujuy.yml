@@ -1,0 +1,18 @@
+id: 2025-jujuy
+year: 2025
+name: "Jujuy Global Game Jam 2025"
+province: "Jujuy"
+locality: "San Salvador de Jujuy"
+audience: ggj
+organization_id: jujuy-global-game-jam
+participants: 113
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/12220/members
+games_source: https://globalgamejam.org/group/12220/games
+games: 15
+format: Híbrida
+organizers:
+  - "ema_romero"
+  - "Jujuy Games Dev"
+  - "GonchuVallejos"
+source: https://globalgamejam.org/jam-sites/2025/jujuy-global-game-jam-2025

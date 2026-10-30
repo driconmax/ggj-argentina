@@ -1,0 +1,12 @@
+year: 2014
+status: historica
+theme:
+  name: "We don't see things as they are, we see them as we are"
+global_stats:
+  sites: 488
+  countries: 72
+  participants: 23189
+  games: 4292
+sources:
+  - title: Global Game Jam Press Kit
+    url: https://globalgamejam.org/global-game-jam-press-kit

@@ -1,0 +1,23 @@
+id: 2025-mar-del-plata
+year: 2025
+name: "Globant - Mar del Plata"
+province: "Buenos Aires"
+locality: "Mar del Plata"
+audience: ggj
+organization_id: globant
+participants: 34
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/12062/members
+games_source: https://globalgamejam.org/group/12062/games
+games: 27
+format: Presencial
+organizers:
+  - "Mariano Mariscal"
+  - "soffpaz"
+  - "Matorvastatin"
+  - "vascocorreo@gm…"
+  - "chexmo"
+  - "JPCard"
+  - "Franco Ponce"
+  - "Flor Malvina"
+source: https://globalgamejam.org/jam-sites/2025/globant-mar-del-plata

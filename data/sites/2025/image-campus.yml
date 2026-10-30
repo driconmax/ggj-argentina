@@ -1,0 +1,16 @@
+id: 2025-image-campus
+year: 2025
+name: "Image Campus"
+province: "Ciudad Autónoma de Buenos Aires"
+locality: "Ciudad Autónoma de Buenos Aires"
+audience: ggj
+organization_id: image-campus
+participants: 103
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/11682/members
+games_source: https://globalgamejam.org/group/11682/games
+games: 24
+format: Presencial
+organizers:
+  - "Lautaro Maciel"
+source: https://globalgamejam.org/jam-sites/2025/image-campus

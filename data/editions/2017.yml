@@ -1,0 +1,12 @@
+year: 2017
+status: historica
+theme:
+  name: "Waves"
+global_stats:
+  sites: 701
+  countries: 95
+  participants: 36401
+  games: 7263
+sources:
+  - title: Global Game Jam Press Kit
+    url: https://globalgamejam.org/global-game-jam-press-kit

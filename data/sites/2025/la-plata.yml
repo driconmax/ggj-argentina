@@ -1,0 +1,16 @@
+id: 2025-la-plata
+year: 2025
+name: "La Plata Global Game Jam 2025"
+province: "Buenos Aires"
+locality: "La Plata"
+audience: ggj
+organization_id: la-plata-global-game-jam
+participants: 52
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/12243/members
+games_source: https://globalgamejam.org/group/12243/games
+games: 22
+format: Presencial
+organizers:
+  - "Javier Islas"
+source: https://globalgamejam.org/jam-sites/2025/la-plata-global-game-jam-2025

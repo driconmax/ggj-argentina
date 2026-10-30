@@ -1,0 +1,12 @@
+year: 2018
+status: historica
+theme:
+  name: "Transmission"
+global_stats:
+  sites: 803
+  countries: 108
+  participants: 42800
+  games: 8606
+sources:
+  - title: Global Game Jam Press Kit
+    url: https://globalgamejam.org/global-game-jam-press-kit

@@ -1,0 +1,16 @@
+id: 2025-unpaz
+year: 2025
+name: "Global Game Jam UNPaz"
+province: "Buenos Aires"
+locality: "José C. Paz"
+audience: ggj
+organization_id: unpaz
+participants: 73
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/12175/members
+games_source: https://globalgamejam.org/group/12175/games
+games: 28
+format: Híbrida
+organizers:
+  - "bermalla"
+source: https://globalgamejam.org/jam-sites/2025/global-game-jam-unpaz

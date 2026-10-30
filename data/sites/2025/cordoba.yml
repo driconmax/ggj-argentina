@@ -1,0 +1,21 @@
+id: 2025-cordoba-vico
+year: 2025
+name: Córdoba Game Jam
+province: Córdoba
+locality: Córdoba capital
+audience: ggj
+organization_id: cordoba-game-jam-vico
+participants: 107
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/11479/members
+games_source: https://globalgamejam.org/group/11479/games
+games: 62
+format: Presencial
+organizers:
+  - person_id: gustavo-gabriel-gonzalez
+  - person_id: debora-sofia-theaux-leutgeb
+  - Ezequiel.exe
+  - EugeTempo
+  - Anashex
+  - Tata_deo
+source: https://globalgamejam.org/jam-sites/2025/cordoba-game-jam

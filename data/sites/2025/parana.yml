@@ -1,0 +1,16 @@
+id: 2025-parana
+year: 2025
+name: "Parana Jam 2025"
+province: "Entre Ríos"
+locality: "Paraná"
+audience: ggj
+organization_id: parana-game-jam
+participants: 23
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/12097/members
+games_source: https://globalgamejam.org/group/12097/games
+games: 14
+format: Híbrida
+organizers:
+  - "Juanco1998"
+source: https://globalgamejam.org/jam-sites/2025/parana-jam-2025

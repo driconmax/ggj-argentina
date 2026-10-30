@@ -1,0 +1,16 @@
+id: 2025-cudi
+year: 2025
+name: "Global Game Jam CUDI 2025"
+province: "Buenos Aires"
+locality: "González Catán"
+audience: ggj
+organization_id: cudi
+participants: 48
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/11921/members
+games_source: https://globalgamejam.org/group/11921/games
+games: 22
+format: Virtual
+organizers:
+  - "Maxi Diaz"
+source: https://globalgamejam.org/jam-sites/2025/global-game-jam-cudi-2025

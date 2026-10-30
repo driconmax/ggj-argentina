@@ -1,0 +1,16 @@
+id: 2025-sandbox-ba
+year: 2025
+name: "The Sandbox BA - Global Game Jam"
+province: "Ciudad Autónoma de Buenos Aires"
+locality: "Ciudad Autónoma de Buenos Aires"
+audience: ggj
+organization_id: sandbox-ba
+participants: 11
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/12247/members
+games_source: https://globalgamejam.org/group/12247/games
+games: 5
+format: Presencial
+organizers:
+  - "joseguerraprado"
+source: https://globalgamejam.org/jam-sites/2025/sandbox-ba-global-game-jam

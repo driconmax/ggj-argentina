@@ -1,0 +1,12 @@
+year: 2021
+status: historica
+theme:
+  name: "Lost and Found"
+global_stats:
+  sites: 585
+  countries: 104
+  participants: 28825
+  games: 6383
+sources:
+  - title: Global Game Jam Press Kit
+    url: https://globalgamejam.org/global-game-jam-press-kit

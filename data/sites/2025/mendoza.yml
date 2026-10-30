@@ -1,0 +1,23 @@
+id: 2025-mendoza
+year: 2025
+name: "Global Game Jam Mendoza - Globant"
+province: "Mendoza"
+locality: "Ciudad de Mendoza"
+audience: ggj
+organization_id: globant
+participants: 120
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/12073/members
+games_source: https://globalgamejam.org/group/12073/games
+games: 29
+format: Presencial
+organizers:
+  - "guinunez"
+  - "agumaster"
+  - "Adrian Oyarce"
+  - "RuloDulo"
+  - "cressgab"
+  - "C-ROW"
+  - "MaxiPola"
+  - "Laura Angélica"
+source: https://globalgamejam.org/jam-sites/2025/global-game-jam-mendoza-globant

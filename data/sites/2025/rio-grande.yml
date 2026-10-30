@@ -1,0 +1,16 @@
+id: 2025-rio-grande
+year: 2025
+name: "GGJ - Rio Grande - FGD 25"
+province: "Tierra del Fuego"
+locality: "Río Grande"
+audience: ggj
+organization_id: fgd
+participants: 13
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/11902/members
+games_source: https://globalgamejam.org/group/11902/games
+games: 13
+format: Virtual
+organizers:
+  - "Nabu"
+source: https://globalgamejam.org/jam-sites/2025/ggj-rio-grande-fgd-25

@@ -27,6 +27,7 @@ FLAGS = {
     "IL": ("🇮🇱", "Israel"),
     "IN": ("🇮🇳", "India"),
     "LV": ("🇱🇻", "Letonia"),
+    "LK": ("🇱🇰", "Sri Lanka"),
     "NL": ("🇳🇱", "Países Bajos"),
     "PT": ("🇵🇹", "Portugal"),
     "PK": ("🇵🇰", "Pakistán"),
@@ -175,9 +176,9 @@ def _argentine_participation(edition):
         add(person, person.get("role", "Global Regional Coordination Team"), str(edition["year"]), edition["global_regional_coordination"]["source"])
     for committee in edition.get("committees", []):
         if committee.get("chair"):
-            add(committee["chair"], f"Chair, {committee['title']}", str(edition["year"]), committee["source"])
+            add(committee["chair"], f"Chair, {committee['title']}", committee.get("period", str(edition["year"])), committee["source"])
         for person in committee.get("members", []):
-            add(person, committee["title"], str(edition["year"]), committee["source"])
+            add(person, committee["title"], committee.get("period", str(edition["year"])), committee["source"])
     for person in edition.get("executive_committee", {}).get("members", []):
         add(person, "Executive Committee", edition["executive_committee"]["period"], "Global Game Jam")
     for board_key, label in (("board_during", "Board of Directors"), ("board_update", "Board of Directors")):
@@ -221,6 +222,85 @@ def _render_year(edition, sites):
         ("Ediciones", "../index.md"),
         (str(year), None),
     ])
+    if edition.get("status") == "historica":
+        stats = edition.get("global_stats", {})
+        lines = breadcrumb + [f"# Edición {year}", ""]
+        if edition.get("intro"):
+            lines += [edition["intro"], ""]
+        lines += ["## Resumen", "", "| Dato | Resultado |", "| --- | --- |"]
+        if edition.get("dates"):
+            lines.append(f"| Fechas | {_cell(edition['dates'])} |")
+        if edition.get("theme"):
+            theme = edition['theme']
+            translation = f" ({_cell(theme['translation'])})" if theme.get('translation') else ""
+            lines.append(f"| Tema | {_cell(theme['name'])}{translation} |")
+        for key, label in (("sites", "Sedes"), ("countries", "Países"), ("participants", "Participantes"), ("games", "Juegos")):
+            if key in stats:
+                lines.append(f"| {label} | {_number(stats[key])} |")
+        if sites:
+            ggj = [site for site in sites if site['audience'] == 'ggj']
+            nxt = [site for site in sites if site['audience'] == 'next']
+            lines.append(f"| Sedes GGJ en Argentina | {len(ggj)} |")
+            if stats.get('sites'):
+                lines.append(f"| Sedes argentinas sobre el total global | {_share(len(ggj), stats['sites'])} % |")
+            for key, label, global_key in (('participants', 'Miembros registrados', 'participants'), ('games', 'Juegos', 'games')):
+                known = [site[key] for site in ggj if site.get(key) is not None]
+                if known:
+                    lines.append(f"| {label} en sedes argentinas | {_reported_summary(ggj, key, label)} |")
+                    if stats.get(global_key):
+                        qualifier = ' (cobertura parcial)' if len(known) < len(ggj) else ''
+                        lines.append(f"| {label} sobre el total global | {_share(sum(known), stats[global_key])} %{qualifier} |")
+            lines.append(f"| Sedes GGJ NEXT en Argentina | {len(nxt)}, contabilizadas aparte |")
+            lines += ["", "Los miembros registrados en las fichas oficiales no equivalen necesariamente a asistencia presencial."]
+        if edition.get('regional_organizers'):
+            lines += ['', '## Organización regional en Argentina', '']
+            for person in edition['regional_organizers']:
+                lines.append(f"- {_person(person, role_codes=['RO'])} — {_cell(person['scope'])}")
+        if edition.get('staff') or edition.get('executive_committee') or edition.get('committees') or edition.get('board_during'):
+            lines += ['', '## Equipo internacional', '']
+        if edition.get('staff'):
+            staff_period = f" — {_cell(edition['staff_period'])}" if edition.get('staff_period') else ''
+            lines += [f'### Staff{staff_period}', '']
+            for person in edition['staff']:
+                lines.append(f"- {_person(person)} — {_cell(person['role'])}")
+            lines.append('')
+        if edition.get('executive_committee', {}).get('members'):
+            committee = edition['executive_committee']
+            lines += [f"### Executive Committee {committee['period']}", '']
+            lines += [f"- {_person(person, role_codes=['EC'])}" for person in committee['members']]
+            lines.append('')
+        for committee in edition.get('committees', []):
+            period = f" — {_cell(committee['period'])}" if committee.get('period') else ''
+            lines += [f"### {committee['title']}{period}", '']
+            if committee.get('coordinator'):
+                lines.append(f"- **Coordinación:** {_person(committee['coordinator'])}")
+            if committee.get('chair'):
+                lines.append(f"- **Chair:** {_person(committee['chair'])}")
+            lines += [f"- {_person(person)}" for person in committee.get('members', [])]
+            lines.append('')
+        for key, title in (('board_during', 'Board of Directors durante la edición'), ('board_update', 'Actualización del Board')):
+            board = edition.get(key, {})
+            if board.get('members'):
+                lines += [f"### {title}", '', board.get('note', ''), '', '| Cargo | Persona |', '| --- | --- |']
+                lines += [f"| {_cell(person['role'])} | {_person(person)} |" for person in board['members']]
+                lines.append('')
+        participation = _argentine_participation(edition)
+        if participation:
+            lines += ['## Participación argentina', '', '| Persona | Participación | Alcance |', '| --- | --- | --- |']
+            for entry in participation:
+                roles = '<br>'.join(_cell(item[0]) for item in entry['roles'])
+                scopes = '<br>'.join(_cell(item[1]) for item in entry['roles'])
+                codes = [code for role, _scope, _source in entry['roles'] for code in _role_codes(role)]
+                lines.append(f"| {_person(entry['person'], role_codes=codes)} | {roles} | {scopes} |")
+            lines.append('')
+        lines += _edition_videos(edition)
+        if edition.get('survey_note'):
+            lines += ['## Alcance global', '', edition['survey_note'], '']
+        if sites:
+            lines += ["## Sedes en Argentina", "", "- [Por provincia](sedes-por-provincia.md)", "- [Por nombre](sedes-por-nombre.md)", ""]
+        lines += ["", "## Fuentes", ""]
+        lines += [f"- [{source['title']}]({source['url']})" for source in edition.get('sources', [])]
+        return "\n".join(lines)
     if edition.get("status") == "en_preparacion":
         lines = breadcrumb + [
             f"# Edición {year}",
@@ -483,6 +563,10 @@ def _render_site(site, organization, previous_events, next_events, people):
     if site.get("notes"):
         lines += ["", "## Notas", "", site["notes"]]
     lines += ["", "## Fuente", "", f"- [Fuente de la ficha]({site['source']})"]
+    if site.get("participants_source"):
+        lines.append(f"- [Miembros registrados]({site['participants_source']})")
+    if site.get("games_source"):
+        lines.append(f"- [Juegos de la sede]({site['games_source']})")
     if previous_events or next_events:
         lines += ["", "## Otras ediciones de la organización", ""]
         if previous_events:

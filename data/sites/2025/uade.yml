@@ -1,0 +1,16 @@
+id: 2025-uade
+year: 2025
+name: "Global Game Jam UADE 2025"
+province: "Ciudad Autónoma de Buenos Aires"
+locality: "Ciudad Autónoma de Buenos Aires"
+audience: ggj
+organization_id: uade
+participants: 62
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/11662/members
+games_source: https://globalgamejam.org/group/11662/games
+games: 16
+format: Híbrida
+organizers:
+  - "Martin.Romero"
+source: https://globalgamejam.org/jam-sites/2025/global-game-jam-uade

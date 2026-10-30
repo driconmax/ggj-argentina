@@ -1,0 +1,16 @@
+id: 2025-unahur
+year: 2025
+name: "Global Game Jam UNAHUR"
+province: "Buenos Aires"
+locality: "Villa Tesei"
+audience: ggj
+organization_id: unahur
+participants: 40
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/11700/members
+games_source: https://globalgamejam.org/group/11700/games
+games: 8
+format: Híbrida
+organizers:
+  - "Zygmuntt"
+source: https://globalgamejam.org/jam-sites/2025/global-game-jam-unahur

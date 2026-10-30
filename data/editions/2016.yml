@@ -1,0 +1,12 @@
+year: 2016
+status: historica
+theme:
+  name: "Ritual"
+global_stats:
+  sites: 632
+  countries: 93
+  participants: 36164
+  games: 6866
+sources:
+  - title: Global Game Jam Press Kit
+    url: https://globalgamejam.org/global-game-jam-press-kit

@@ -1,0 +1,16 @@
+id: 2025-san-juan
+year: 2025
+name: "Red Desarrolladores de Videojuegos San Juan"
+province: "San Juan"
+locality: "San Juan"
+audience: ggj
+organization_id: red-dev-san-juan
+participants: 20
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/11922/members
+games_source: https://globalgamejam.org/group/11922/games
+games: 9
+format: Híbrida
+organizers:
+  - "ReDevS"
+source: https://globalgamejam.org/jam-sites/2025/red-desarrolladores-de-videojuegos-san-juan

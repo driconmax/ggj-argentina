@@ -1,0 +1,12 @@
+year: 2015
+status: historica
+theme:
+  name: "What do we do now?"
+global_stats:
+  sites: 518
+  countries: 78
+  participants: 28800
+  games: 5438
+sources:
+  - title: Global Game Jam Press Kit
+    url: https://globalgamejam.org/global-game-jam-press-kit

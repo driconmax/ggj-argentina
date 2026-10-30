@@ -1,0 +1,12 @@
+year: 2023
+status: historica
+theme:
+  name: "Roots"
+global_stats:
+  sites: 800
+  countries: 108
+  participants: 40000
+  games: 7600
+sources:
+  - title: Global Game Jam Press Kit
+    url: https://globalgamejam.org/global-game-jam-press-kit

@@ -1,0 +1,20 @@
+id: 2025-rosario
+year: 2025
+name: "Rosario GGJ"
+province: "Santa Fe"
+locality: "Rosario"
+audience: ggj
+organization_id: rosario-ggj
+participants: 32
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/12180/members
+games_source: https://globalgamejam.org/group/12180/games
+games: 18
+format: Presencial
+organizers:
+  - "IceColdSword"
+  - "DavidRuiz"
+  - "at12318"
+  - "Mache30"
+  - "Duodecim"
+source: https://globalgamejam.org/jam-sites/2025/rosario-ggj

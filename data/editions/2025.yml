@@ -1,0 +1,115 @@
+year: 2025
+status: historica
+intro: La 16.ª Global Game Jam se celebró del 20 al 26 de enero de 2025.
+dates: 20 al 26 de enero de 2025
+theme:
+  name: "Bubble"
+  translation: Burbuja
+global_stats:
+  sites: 803
+  countries: 97
+  participants: 35470
+  games: 12100
+staff_period: Mayo de 2025
+staff:
+  - {name: Maria Burns Ortiz, role: Executive Director, countries: [US]}
+  - {name: Richard Hebblewhite, role: Director of Programs and Events, countries: [GB]}
+  - {name: Tarja Porkka-Kontturi, role: Director of Community Engagement, countries: [FI]}
+  - {name: Zain Ul Hassan, role: Director of Technology, countries: [PK]}
+  - {name: Diana Sanchez, role: Sponsorships Coordinator, countries: [US]}
+  - {name: Emmi Hattunen, role: Community and Events Coordinator, countries: [FI]}
+executive_committee:
+  period: 2024–2025
+  members:
+    - {name: Sabrina Culyba, countries: [US]}
+    - {name: Sandro Daniel Gomes Gonçalves, countries: [PT]}
+    - {name: Ekinsu Turunc Gunes, countries: [TR, CA]}
+    - {name: Richard Hebblewhite, countries: [GB]}
+    - {name: Oleksii Izvalov, countries: [UA]}
+    - {name: Jung-Sheng “Johnson” Lin, countries: [TW]}
+    - {name: Joseph Olin, countries: [US, CO]}
+    - {name: Sandra Castro Pinzón, countries: [CO]}
+    - {name: Yadu Rajiv, countries: [IN]}
+    - {name: Jo Summers, countries: [GB]}
+committees:
+  - title: Theme Committee
+    source: https://www.youtube.com/watch?v=wJhQ9Z4MCM4
+    coordinator: {name: Joseph Olin, countries: [US, CO]}
+  - title: Diversifier Committee
+    source: https://globalgamejam.org/news/global-game-jam-2025-diversifiers-are-here
+    members:
+      - {name: Sandra Castro Pinzón, countries: [CO]}
+      - {name: Ian Hamilton}
+      - {name: Jo Summers, countries: [GB]}
+      - {name: Sarah Cole}
+      - {name: Sabrina Culyba, countries: [US]}
+      - {name: Oleksii Izvalov, countries: [UA]}
+      - {name: Yadu Rajiv, countries: [IN]}
+      - {name: Jessica Rowley}
+  - title: GGJ NEXT Advisory Committee
+    period: Mayo de 2025
+    source: https://globalgamejam.org/news/introducing-our-ggj-next-committee
+    members:
+      - {name: Richard Hebblewhite, countries: [GB]}
+      - {name: Yadu Rajiv, countries: [IN]}
+      - {name: Fathima Minha Farook, countries: [LK]}
+      - {name: KunAn Li, countries: [TW, CN]}
+      - {name: Patricia Dennis, countries: [US]}
+      - {person_id: ariel-silvio-norberto-ramos}
+board_during:
+  period: 2024–2025
+  note: Composición publicada en la historia institucional de Global Game Jam.
+  members:
+    - {name: Sabrina Culyba, role: President, countries: [US]}
+    - {name: Jarory de Jesus, role: Vice President, countries: [US]}
+    - {name: Felix Hilgert, role: Secretary, countries: [US, DE]}
+    - {name: Kate Edwards, role: Treasurer, countries: [US]}
+    - {name: Dr. JC Lau, role: Integrante}
+    - {name: Nourhan ElSherief, role: Integrante}
+    - {name: Johana Riquier, role: Integrante}
+    - {name: Rilwon Jaiyeola, role: Integrante}
+    - {name: Martine Spaans, role: Integrante, countries: [NL]}
+    - {name: Olasunkanmi James, role: Integrante}
+board_update:
+  period: Mayo de 2025
+  note: Composición publicada por GGJ para mayo de 2025, posterior a la jam.
+  members:
+    - {name: Jarory de Jesus, role: President, countries: [US]}
+    - {person_id: mishka-de-caro, role: Vice President}
+    - {name: Kate Edwards, role: Treasurer, countries: [US]}
+    - {name: Felix Hilgert, role: Secretary, countries: [US, DE]}
+    - {name: Sabrina Culyba, role: Integrante, countries: [US]}
+    - {name: Mashael Abualnaja, role: Integrante, countries: [SA]}
+    - {name: Yadu Rajiv, role: Integrante, countries: [IN]}
+    - {name: Kathee Chimowitz, role: Integrante, countries: [US]}
+    - {name: Jo Summers, role: Integrante, countries: [GB]}
+    - {name: Martine Spaans, role: Integrante, countries: [NL]}
+videos:
+  - title: Keynote y anuncio del tema
+    youtube_id: wJhQ9Z4MCM4
+    description: Presentación global de Global Game Jam 2025.
+survey_note: >-
+  En la encuesta posterior, el 86 % de quienes respondieron afirmó haber aprendido
+  o mejorado habilidades, el 94 % presentó un juego y más del 99 % dijo que
+  probablemente o definitivamente volvería a participar. La encuesta recibió
+  4.108 respuestas voluntarias; los resultados no necesariamente representan a
+  la totalidad de participantes.
+sources:
+  - title: Global Game Jam Press Kit
+    url: https://globalgamejam.org/global-game-jam-press-kit
+  - title: Global Game Jam History
+    url: https://globalgamejam.org/history
+  - title: Introducing the 2025 Executive Committee
+    url: https://globalgamejam.org/news/introducing-2025-executive-committee
+  - title: Global Game Jam 2025 Diversifiers are Here!
+    url: https://globalgamejam.org/news/global-game-jam-2025-diversifiers-are-here
+  - title: Sedes de GGJ 2025 en Argentina
+    url: https://globalgamejam.org/jam-sites/2025?country=AR
+  - title: New Players Joining the Party — GGJ Board Changes
+    url: https://globalgamejam.org/news/new-players-joining-party-ggj-board-changes
+  - title: GGJ NEXT Advisory Committee
+    url: https://globalgamejam.org/news/introducing-our-ggj-next-committee
+  - title: Global Game Jam 2025 — Jammer Survey Data
+    url: https://globalgamejam.org/news/global-game-jam-2025-jammer-survey-data
+  - title: Keynote y créditos de Global Game Jam 2025
+    url: https://www.youtube.com/watch?v=wJhQ9Z4MCM4

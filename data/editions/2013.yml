@@ -1,0 +1,12 @@
+year: 2013
+status: historica
+theme:
+  name: "The Sound of a Heartbeat"
+global_stats:
+  sites: 319
+  countries: 63
+  participants: 16705
+  games: 3248
+sources:
+  - title: Global Game Jam Press Kit
+    url: https://globalgamejam.org/global-game-jam-press-kit

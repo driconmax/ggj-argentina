@@ -1,0 +1,12 @@
+year: 2009
+status: historica
+theme:
+  name: "As long as we have each other, we will never run out of problems"
+global_stats:
+  sites: 53
+  countries: 23
+  participants: 1650
+  games: 370
+sources:
+  - title: Global Game Jam History
+    url: https://globalgamejam.org/history

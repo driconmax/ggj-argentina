@@ -1,0 +1,12 @@
+year: 2024
+status: historica
+theme:
+  name: "Make Me Laugh"
+global_stats:
+  sites: 796
+  countries: 102
+  participants: 34649
+  games: 9964
+sources:
+  - title: Global Game Jam Press Kit
+    url: https://globalgamejam.org/global-game-jam-press-kit

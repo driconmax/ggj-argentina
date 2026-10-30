@@ -1,0 +1,18 @@
+id: 2025-exof
+year: 2025
+name: "ExOf - Global Game Jam Indie 2025!"
+province: "Ciudad Autónoma de Buenos Aires"
+locality: "Ciudad Autónoma de Buenos Aires"
+audience: ggj
+organization_id: exof
+participants: 35
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/11964/members
+games_source: https://globalgamejam.org/group/11964/games
+games: 19
+format: Presencial
+organizers:
+  - "BruReale"
+  - "Mer Grazzini"
+  - "Vale Zumzum"
+source: https://globalgamejam.org/jam-sites/2025/exof-global-game-jam-indie-2025

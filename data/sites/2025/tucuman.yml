@@ -1,0 +1,16 @@
+id: 2025-tucuman
+year: 2025
+name: "Global Game Jam Tucumán 2025"
+province: "Tucumán"
+locality: "San Miguel de Tucumán"
+audience: ggj
+organization_id: tucuman-ggj
+participants: 59
+participants_basis: registered_members
+participants_source: https://globalgamejam.org/group/11836/members
+games_source: https://globalgamejam.org/group/11836/games
+games: 31
+format: Híbrida
+organizers:
+  - "Tutyman"
+source: https://globalgamejam.org/jam-sites/2025/global-jame-jam-tucuman-2025
