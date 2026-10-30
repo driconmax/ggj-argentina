@@ -2,6 +2,12 @@
 
 Una game jam es un encuentro para imaginar y crear juegos en un tiempo limitado. Podés venir a aprender, compartir ideas y conocer personas. No hace falta llegar con un equipo ni tener experiencia previa: lo importante es participar y disfrutar el proceso.
 
+## Tu sede es parte de algo más grande
+
+Cuando participás en una sede de Global Game Jam, compartís la experiencia con tu comunidad local y con personas de otras sedes de tu provincia, de Argentina y de todo el mundo. Cada lugar tiene su propia identidad, pero todos forman parte de un encuentro global para crear, aprender y conectar a través de los juegos.
+
+Acercate a otras personas de tu sede, conocé los proyectos de otras comunidades y compartí el tuyo. Las conexiones que hagas pueden continuar mucho después de que termine la jam.
+
 ## Antes de la jam
 
 ### Elegí una sede
@@ -27,6 +33,8 @@ Depende del lugar y de tu proyecto. Consultá primero qué ofrece la sede. Puede
 Probá tus herramientas con anticipación, pero recordá que también podés trabajar con papel, conversar ideas y aprender de otras personas.
 
 ## Durante la jam
+
+Antes de participar, revisá las [políticas y reglas de GGJ](politicas-ggj.md), incluido el código de conducta y los canales para pedir ayuda o informar una situación.
 
 ### La apertura y el tema
 

@@ -4,6 +4,8 @@ Esta sección reunirá materiales útiles para participantes y equipos organizad
 
 Si vas a participar, comenzá por la [guía del jammer](../guia-jammer.md). Si estás organizando una sede, consultá las [guías y plantillas](../organizacion/index.md).
 
+Las [políticas y reglas de GGJ](../politicas-ggj.md) reúnen enlaces oficiales sobre conducta, sedes y juegos.
+
 ## Criterios de inclusión
 
 Cada recurso debería indicar:

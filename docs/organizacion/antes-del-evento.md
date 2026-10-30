@@ -5,6 +5,7 @@ Esta lista es orientativa. Confirmá siempre los requisitos oficiales y locales 
 ## Alcance y equipo
 
 - Definir objetivos, capacidad y modalidad.
+- Contactar a la organización regional, confirmar las condiciones de la edición y, cuando sea posible, compartir ideas y recursos con otras sedes y comunidades de la provincia y del país.
 - Asignar responsables de coordinación, espacio, comunicación, tecnología y cuidado de participantes.
 - Establecer un canal interno y un procedimiento para incidentes.
 
